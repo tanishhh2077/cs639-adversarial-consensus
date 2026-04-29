@@ -1,0 +1,40 @@
+{
+  "scenario_id": "real_001",
+  "company": "EXAMPLE - Replace with real data",
+  "ticker": "EXAMPLE",
+  "event_date": "YYYY-MM-DD",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "TODO: Write 2-3 paragraph summary of the earnings report. Pull from press releases, Seeking Alpha, or Motley Fool. Include: what beat/missed expectations, management commentary, key highlights.",
+    "key_metrics": {
+      "revenue": 0,
+      "revenue_yoy_growth": 0.0,
+      "eps": 0.0,
+      "eps_yoy_growth": 0.0,
+      "gross_margin": 0.0,
+      "operating_margin": 0.0,
+      "guidance_next_quarter": "TODO: What did management guide for next quarter?"
+    },
+    "price_history": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "sector": "TODO: Technology / Healthcare / Finance / Consumer / Energy / etc.",
+    "macro_context": "TODO: 2-3 sentences on macro environment at time of event. Interest rates, market sentiment, any major macro events happening."
+  },
+  "ground_truth": {
+    "price_1w_after": 0.0,
+    "price_change_pct": 0.0,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "TODO: Risk factor 1 - what should a good analyst have flagged?",
+      "TODO: Risk factor 2",
+      "TODO: Risk factor 3",
+      "TODO: Risk factor 4",
+      "TODO: Risk factor 5"
+    ],
+    "missed_signals": [
+      "TODO: Something that was hard to see but mattered in hindsight"
+    ]
+  }
+}

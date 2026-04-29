@@ -1,0 +1,39 @@
+{
+  "scenario_id": "modified_001",
+  "company": "TODO: Real company name",
+  "ticker": "TODO: Real ticker",
+  "event_date": "YYYY-MM-DD",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_type_note": "Set to 'misinformation' or 'incomplete'. NEVER 'none' for modified scenarios.",
+  "_modification_description": "TODO: Describe exactly what you changed. e.g. 'Changed revenue in key_metrics from $12.4B to $8.1B while keeping earnings_summary unchanged, creating a contradiction.'",
+  "input_data": {
+    "earnings_summary": "TODO: Real earnings summary text (keep this accurate for misinformation scenarios - the lie goes in key_metrics)",
+    "key_metrics": {
+      "revenue": 0,
+      "_misinformation_note": "For misinformation scenarios: change ONE number here to contradict the earnings_summary above",
+      "revenue_yoy_growth": 0.0,
+      "eps": 0.0,
+      "eps_yoy_growth": 0.0,
+      "gross_margin": 0.0,
+      "operating_margin": 0.0,
+      "guidance_next_quarter": "TODO"
+    },
+    "price_history": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "sector": "TODO",
+    "macro_context": "TODO"
+  },
+  "ground_truth": {
+    "price_1w_after": 0.0,
+    "price_change_pct": 0.0,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "TODO: Real risk factors from the actual event"
+    ],
+    "missed_signals": [
+      "TODO"
+    ]
+  }
+}

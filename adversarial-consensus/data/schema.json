@@ -1,0 +1,44 @@
+{
+  "_comment": "This is the reference schema for all scenario JSON files. Copy this structure for every scenario you create.",
+  "scenario_id": "real_001",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "event_date": "2025-01-30",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "_modification_type_options": ["none", "misinformation", "incomplete"],
+  "input_data": {
+    "earnings_summary": "Apple reported Q1 FY2025 results that exceeded analyst expectations...",
+    "key_metrics": {
+      "revenue": 124000000000,
+      "revenue_yoy_growth": 0.04,
+      "eps": 2.40,
+      "eps_yoy_growth": 0.10,
+      "gross_margin": 0.465,
+      "operating_margin": 0.31,
+      "guidance_next_quarter": "Revenue between $125B-$128B"
+    },
+    "price_history": [225.0, 227.5, 223.1, 226.8, 224.3, 228.9, 230.1, 227.4, 225.8, 229.3,
+                      231.0, 228.7, 226.5, 230.2, 232.1, 229.8, 227.6, 231.4, 233.0, 230.5,
+                      228.3, 232.7, 234.1, 231.9, 229.6, 233.2, 235.0, 232.8, 230.4, 229.1],
+    "sector": "Technology",
+    "macro_context": "Federal Reserve held rates steady at 4.25-4.5%. Consumer spending remained resilient. Tech sector outperforming broader market YTD. Strong dollar creating headwinds for international revenue."
+  },
+  "ground_truth": {
+    "price_1w_after": 232.50,
+    "price_change_pct": 3.2,
+    "actual_direction": "up",
+    "_actual_direction_options": ["up", "down", "flat"],
+    "key_risk_factors": [
+      "China market revenue declining for third consecutive quarter",
+      "Services revenue growth rate decelerating from 20% to 14%",
+      "iPhone unit sales below expectations despite revenue beat",
+      "Gross margin guidance for Q2 below current quarter",
+      "Regulatory pressure on App Store in EU"
+    ],
+    "missed_signals": [
+      "Supply chain diversification to India ahead of schedule",
+      "Apple Intelligence features driving upgrade cycle earlier than expected"
+    ]
+  }
+}
