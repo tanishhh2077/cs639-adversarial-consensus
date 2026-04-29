@@ -21,32 +21,31 @@ A multi-agent LLM framework where specialized agents with conflicting analytical
 
 ## Repo Structure
 ```
-adversarial-consensus/
-  agents/
-    bull.py          # Yug
-    base.py          # Yug
-    bear.py          # Ritesh
-    quant.py         # Ritesh
-    macro.py         # Anirudh
-    arbiter.py       # Tanish
-  pipelines/
-    adversarial.py   # Tanish - main pipeline
-    cooperative.py   # Colin - baseline
-    monolithic.py    # Harshit - baseline
-  evaluation/
-    metrics.py       # Anish
-    visualization.py # Anish
-  data/
-    scenarios/
-      real/          # Priyansh - 25 real earnings events
-      modified/      # Harshit - 25 modified scenarios
-    schema.json      # Scenario JSON schema (reference)
-  utils/
-    api_client.py    # Shared Claude API wrapper
-    helpers.py       # Shared helper functions
-  report/            # Final report goes here
-  requirements.txt
-  .env.example
+agents/
+  bull.py          # Yug
+  base.py          # Yug
+  bear.py          # Ritesh
+  quant.py         # Ritesh
+  macro.py         # Anirudh
+  arbiter.py       # Tanish
+pipelines/
+  adversarial.py   # Tanish - main pipeline
+  cooperative.py   # Colin - baseline
+  monolithic.py    # Harshit - baseline
+evaluation/
+  metrics.py       # Anish
+  visualization.py # Anish
+data/
+  scenarios/
+    real/          # Priyansh - 25 real earnings events
+    modified/      # Harshit - 25 modified scenarios
+  schema.json      # Scenario JSON schema (reference)
+utils/
+  api_client.py    # Shared Claude API wrapper
+  helpers.py       # Shared helper functions
+report/            # Final report goes here
+requirements.txt
+.env.example
 ```
 
 ---
