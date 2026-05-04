@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_014",
+  "company": "Snowflake Inc.",
+  "ticker": "SNOW",
+  "event_date": "2024-02-28",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "The earnings_summary omits the CEO departure announced simultaneously with Q4 FY2024 results. Frank Slootman's sudden retirement and replacement by Sridhar Ramaswamy (ex-Google ads) was the primary driver of the stock's 18% drop despite solid financial results. This missing material non-financial information tests whether agents can infer management risk.",
+  "input_data": {
+    "earnings_summary": "Snowflake reported Q4 FY2024 results that beat revenue estimates. Product revenue reached $738.1 million, up 33% year-over-year, accelerating from the prior quarter's 23% growth. Full-year FY2024 product revenue was $2.67 billion, up 38% YoY. Net revenue retention rate remained at 131% — a best-in-class metric indicating strong expansion within existing customers. Non-GAAP operating margin improved to 6%. Adjusted free cash flow margin reached 28%. For FY2025, Snowflake guided product revenue of $3.25 billion (22% growth), below analyst expectations of $3.35 billion. The company's AI capabilities including Cortex AI and Arctic LLM were highlighted as key differentiation for the coming year.",
+    "key_metrics": {
+      "revenue": 738100000,
+      "revenue_yoy_growth": 0.33,
+      "eps": -0.51,
+      "eps_yoy_growth": 0.12,
+      "gross_margin": 0.756,
+      "operating_margin": -0.042,
+      "guidance_next_quarter": "Q1 FY2025 product revenue $745M-$750M (+26% YoY); Full-year FY2025 product revenue $3.25B"
+    },
+    "price_history": [218.4, 222.8, 219.3, 224.2, 228.6, 225.1, 229.5, 233.9, 230.4, 234.8,
+                      239.2, 235.7, 240.1, 244.5, 241.0, 245.4, 249.8, 246.3, 250.7, 255.1,
+                      251.6, 256.0, 260.4, 256.9, 261.3, 265.7, 262.2, 266.6, 271.0, 230.8],
+    "sector": "Technology",
+    "macro_context": "Cloud data warehouse market intensifying with competition from Databricks, Google BigQuery, and AWS Redshift. AI workloads increasingly important differentiator for data platform vendors. Enterprise data governance and compliance spending growing as AI regulation expands. Snowflake's consumption-based model means revenue tied directly to customer AI workload volumes, creating both upside and downside uncertainty."
+  },
+  "ground_truth": {
+    "price_1w_after": 176.20,
+    "price_change_pct": -23.7,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "CEO Frank Slootman's sudden retirement announcement alongside earnings was a major shock to investors",
+      "FY2025 guidance of $3.25B implied 22% growth vs. 38% in FY2024 — significant deceleration",
+      "Guidance miss vs. $3.35B consensus of $100M was interpreted as conservative management under new CEO",
+      "Consumption-based business model creates high revenue visibility risk if AI workload adoption slows",
+      "Net revenue retention declining from 158% peak to 131% signals slowing expansion within existing customers"
+    ],
+    "missed_signals": [
+      "New CEO Ramaswamy's background in Google Ads signaled a commercial go-to-market transformation that could take 12-18 months to show results",
+      "Arctic open-source LLM launch was strategically important but generated limited near-term commercial value"
+    ]
+  }
+}

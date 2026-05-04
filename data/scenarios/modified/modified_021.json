@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_021",
+  "company": "Palo Alto Networks Inc.",
+  "ticker": "PANW",
+  "event_date": "2024-02-20",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "The earnings_summary omits the company's strategic announcement to shift its go-to-market model to 'platformization' — offering free/discounted bundling to displace point solutions. This announcement caused the stock to drop 28% on the day despite solid financials. Agents must infer the risk from incomplete information.",
+  "input_data": {
+    "earnings_summary": "Palo Alto Networks reported Q2 FY2024 results that mixed beats on some metrics with misses on others. Revenue reached $1.98 billion, up 19% year-over-year, in line with expectations. Next Generation Security ARR grew 53% to $3.48 billion. Remaining Performance Obligation (RPO) grew 22% to $10.8 billion. Non-GAAP EPS was $1.46, beating the consensus estimate of $1.30. However, the company slightly lowered its full-year billings guidance. Management described an acceleration in its platform strategy focused on consolidating customer security spending across fewer vendors. The company issued Q3 FY2024 revenue guidance of $1.95B-$1.98B.",
+    "key_metrics": {
+      "revenue": 1980000000,
+      "revenue_yoy_growth": 0.19,
+      "eps": 1.46,
+      "eps_yoy_growth": 0.287,
+      "gross_margin": 0.757,
+      "operating_margin": 0.229,
+      "guidance_next_quarter": "Q3 FY2024 revenue $1.95B-$1.98B; Full-year FY2024 revenue $7.95B-$8.0B; Billings $10.1B-$10.2B (lowered)"
+    },
+    "price_history": [348.2, 355.7, 363.4, 357.0, 364.8, 372.7, 366.3, 374.3, 382.4, 375.9,
+                      384.1, 392.4, 386.0, 394.3, 402.8, 396.4, 404.8, 413.4, 406.9, 415.4,
+                      424.1, 417.7, 426.3, 435.1, 428.6, 437.3, 446.2, 439.7, 448.5, 390.2],
+    "sector": "Technology",
+    "macro_context": "Enterprise cybersecurity spending remains resilient despite macro pressures as breaches and ransomware attacks continue to escalate. Vendor consolidation trend accelerating — CISOs reducing number of security vendors from average 45+ to fewer than 10-15. Zero-trust architecture mandates expanding from federal government to private sector. AI-powered threat detection emerging as key differentiator. CrowdStrike and Microsoft Defender intensifying competition in endpoint security."
+  },
+  "ground_truth": {
+    "price_1w_after": 263.15,
+    "price_change_pct": -32.6,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Platformization strategy means offering free/discounted products to win consolidation — near-term billings headwind",
+      "Billings guidance reduction by $400M+ for FY2024 was the most concrete negative signal",
+      "Strategy shift creates 12-18 month revenue transition period before platform deals convert to billings",
+      "Investor confusion about the strategy shift created uncertainty that commanded a significant multiple discount",
+      "Q3 revenue guide midpoint of $1.965B implied deceleration from Q2's $1.98B (sequential decline)"
+    ],
+    "missed_signals": [
+      "Platformization, if successful, could create much larger long-term ARR per customer by consolidating 5-7 point solutions",
+      "CEO Nikesh Arora explicitly referenced customer data showing platformized customers spending 3x more over 3 years"
+    ]
+  }
+}

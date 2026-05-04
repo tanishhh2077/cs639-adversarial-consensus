@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_019",
+  "company": "CrowdStrike Holdings Inc.",
+  "ticker": "CRWD",
+  "event_date": "2024-06-04",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed the price_history data (all zeros) AND omitted the macro_context. This double omission leaves agents with only fundamental financial data and the earnings narrative — testing how agents weight qualitative vs. quantitative signals when both macro and momentum data are missing.",
+  "input_data": {
+    "earnings_summary": "CrowdStrike reported Q1 FY2025 results that significantly exceeded analyst expectations across all key metrics. Annual Recurring Revenue (ARR) grew 33% to $3.65 billion, with net new ARR of $212 million. Revenue reached $921 million, up 33% year-over-year. Subscription revenue grew 34% to $872 million. Non-GAAP operating income hit $228 million (25% margin), up from $140 million a year ago. Non-GAAP EPS of $0.93 beat the $0.89 consensus. The company raised full-year FY2025 guidance with revenue guided to $3.976B-$4.011B (31-32% growth). CEO George Kurtz highlighted that CrowdStrike Falcon platform's AI-native architecture continues to win competitive displacements from legacy vendors including Palo Alto Networks, Symantec, and Microsoft Defender.",
+    "key_metrics": {
+      "revenue": 921000000,
+      "revenue_yoy_growth": 0.33,
+      "eps": 0.93,
+      "eps_yoy_growth": 0.432,
+      "gross_margin": 0.789,
+      "operating_margin": 0.247,
+      "guidance_next_quarter": "Q2 FY2025 revenue $958.3M-$961.2M; Full-year FY2025 revenue $3.976B-$4.011B"
+    },
+    "price_history": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "sector": "Technology",
+    "macro_context": "NOT PROVIDED"
+  },
+  "ground_truth": {
+    "price_1w_after": 398.00,
+    "price_change_pct": 11.8,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Valuation at 90x forward earnings demands sustained 30%+ growth with no execution risk",
+      "Platform consolidation strategy requires customers to commit to a larger and stickier contract",
+      "July 2024 software update incident (global IT outage) risk was not visible in Q1 but materialized in Q2",
+      "Net new ARR growth slowing at the margin as the law of large numbers affects the compounding base",
+      "Microsoft Defender and Palo Alto aggressive pricing to defend market share could intensify"
+    ],
+    "missed_signals": [
+      "Module adoption rate — customers using 7+ modules growing 95% YoY — was a quality indicator of platform stickiness",
+      "Federal government segment accelerating as CISA zero-trust mandates drive CrowdStrike deployments"
+    ]
+  }
+}

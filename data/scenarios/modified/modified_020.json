@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_020",
+  "company": "Shopify Inc.",
+  "ticker": "SHOP",
+  "event_date": "2024-05-08",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed revenue_yoy_growth from the actual 23% to -8% (implying revenue contraction), while all other metrics including the earnings_summary correctly show a strong revenue beat. This significant directional reversal tests whether the quant agent's heavy reliance on the YoY growth number overrides the textual evidence of a strong quarter.",
+  "input_data": {
+    "earnings_summary": "Shopify reported Q1 2024 results that exceeded analyst expectations. Revenue reached $1.86 billion, up 23% year-over-year, beating the consensus estimate of $1.83 billion. Gross Merchandise Volume (GMV) grew 23% to $60.9 billion. Gross profit grew 33% to $966 million with a gross margin of 51.9%. Free Cash Flow Margin reached 12% (vs. 5% a year ago), reflecting improved operating leverage following the 2023 logistics divestiture to Flexport. Merchant Solutions revenue grew 27% to $1.38 billion while Subscription Solutions grew 34% to $511 million as Shopify Plus adoption accelerated. The company also announced Shopify Payments expanding internationally and new AI tools for merchants embedded across the platform.",
+    "key_metrics": {
+      "revenue": 1860000000,
+      "revenue_yoy_growth": -0.08,
+      "_note": "MISINFORMATION: Actual revenue YoY growth was +23%. This figure is deliberately flipped to a contraction.",
+      "eps": 0.20,
+      "eps_yoy_growth": 2.0,
+      "gross_margin": 0.519,
+      "operating_margin": 0.032,
+      "guidance_next_quarter": "Q2 2024 revenue growth in high-teens percentage range (YoY); Gross profit dollar growth similar to Q1"
+    },
+    "price_history": [74.3, 76.8, 79.4, 77.1, 79.8, 82.4, 80.1, 82.8, 85.4, 83.1,
+                      85.8, 88.4, 86.1, 88.8, 91.4, 89.1, 91.8, 94.4, 92.1, 94.8,
+                      97.4, 95.1, 97.8, 100.4, 98.1, 100.8, 103.4, 101.1, 103.8, 67.5],
+    "sector": "Technology",
+    "macro_context": "E-commerce market growth moderating after pandemic boom, with U.S. online retail growing 8% YoY vs. 15-20% pandemic peak. Shopify benefiting from independent merchant growth vs. Amazon marketplace dependency. Black Friday / Cyber Monday 2023 volumes set records on Shopify platform. Competition from WooCommerce, BigCommerce, and Amazon's merchant tools intensifying. Cross-border e-commerce growing as Shopify internationalizes its payments and logistics infrastructure."
+  },
+  "ground_truth": {
+    "price_1w_after": 62.15,
+    "price_change_pct": -8.1,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Q2 guidance of 'high-teens' growth implied deceleration from Q1's 23% — disappointed growth investors",
+      "Free Cash Flow margin of 12% strong but guidance implied margin could decline in H2 2024",
+      "Flexport logistics divestiture removed a revenue segment, making organic comparisons complex",
+      "Take rate expansion strategy (higher fees on payments and additional services) creates merchant churn risk",
+      "Competition from Amazon Buy with Prime gaining traction among Shopify's merchant base"
+    ],
+    "missed_signals": [
+      "Gross profit dollar growth of 33% (faster than revenue) signaled improving product mix toward payments and subscriptions",
+      "Shopify Plus enterprise tier adoption accelerating as larger merchants validate platform at scale"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_023",
+  "company": "Spotify Technology S.A.",
+  "ticker": "SPOT",
+  "event_date": "2024-04-23",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed the Monthly Active User (MAU) and Premium Subscriber count data from the earnings_summary — these are the primary KPIs for Spotify (619M MAUs, 239M subscribers in Q1 2024). Without user growth data, agents must infer performance from revenue and margin metrics alone, which showed mixed signals.",
+  "input_data": {
+    "earnings_summary": "Spotify reported Q1 2024 results with strong financial improvement, particularly on the profitability front. Revenue grew 20% year-over-year to €3.64 billion. Premium revenue grew 22% to €3.00 billion. Gross margin expanded to 27.6% from 25.2% a year ago — the highest in company history — driven by the restructuring, podcast wind-downs, and improved licensing economics. Operating income reached €168 million, compared to an operating loss of €156 million in Q1 2023. Free cash flow came in at €421 million. The company also announced meaningful price increases across markets in Q2 2024. For Q2 2024, Spotify guided total revenue of €3.8 billion and gross margin of approximately 29%.",
+    "key_metrics": {
+      "revenue": 3640000000,
+      "revenue_yoy_growth": 0.20,
+      "eps": 1.05,
+      "eps_yoy_growth": 4.5,
+      "gross_margin": 0.276,
+      "operating_margin": 0.046,
+      "guidance_next_quarter": "Q2 2024 revenue €3.8B; Gross margin ~29%; MAU guidance NOT PROVIDED in this scenario"
+    },
+    "price_history": [198.4, 203.9, 209.6, 205.1, 211.0, 216.9, 212.3, 218.4, 224.5, 219.9,
+                      226.2, 232.5, 227.8, 234.3, 240.8, 236.1, 242.8, 249.5, 244.8, 251.7,
+                      258.6, 253.9, 260.9, 268.1, 263.4, 270.6, 277.9, 273.2, 280.5, 265.3],
+    "sector": "Communication Services",
+    "macro_context": "Global music streaming market growing 9% YoY with Spotify maintaining 31% market share. Podcast advertising market recovering after 2023 correction. AI-generated music creating industry debate about licensing and royalty economics. Apple Music and Amazon Music competing aggressively on price in premium music streaming. Spotify executing price increases in major markets (U.S., UK, Australia) in Q2 2024 — first meaningful price hike in years."
+  },
+  "ground_truth": {
+    "price_1w_after": 307.88,
+    "price_change_pct": 16.3,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Price increases risk subscriber churn acceleration particularly in price-sensitive emerging markets",
+      "Podcast monetization pivot away from exclusive content towards open ecosystem reduces competitive differentiation",
+      "Gross margin at 27.6% still far below peers (Apple Music, Amazon Music) with bigger balance sheets to sustain losses",
+      "Artist royalty rates under pressure from streaming labels seeking higher per-stream payouts",
+      "Audiobook expansion creating licensing complexity and cost with uncertain user adoption"
+    ],
+    "missed_signals": [
+      "619M MAU and 239M premium subscribers both beat guidance significantly — the primary upside catalyst",
+      "Gross margin guidance of 29% for Q2 implied the profitability inflection was durable, not one-time"
+    ]
+  }
+}

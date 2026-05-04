@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_025",
+  "company": "Arm Holdings plc",
+  "ticker": "ARM",
+  "event_date": "2024-05-08",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed the macro_context to describe a chip market downturn and describe ARM's IPO as 'underperforming expectations' — the opposite of reality. ARM went public at $51/share in September 2023 and rallied 80%+ to trade above $90 ahead of these earnings. The earnings themselves were a massive beat that sent shares up 45% in a single session. This combined macro misinformation with accurate financials tests narrative vs. contextual reasoning.",
+  "input_data": {
+    "earnings_summary": "Arm Holdings reported exceptional Q4 and fiscal year 2024 results that dramatically exceeded analyst expectations. Q4 FY2024 revenue reached $928 million, up 47% year-over-year — the strongest growth quarter in the company's history as a public company. Royalty revenue grew 37% to $514 million. Licensing revenue surged 60% to $414 million as AI chipmakers (NVIDIA, Qualcomm, Apple, AMD) all renewed and expanded their architecture licenses. Full-year FY2024 revenue of $3.23 billion grew 21% YoY. Non-GAAP EPS of $0.36 beat the consensus estimate of $0.21 by 71%. For FY2025, management guided revenue of $3.8B-$4.1B and non-GAAP EPS of $1.45-$1.65 — far above all analyst models.",
+    "key_metrics": {
+      "revenue": 928000000,
+      "revenue_yoy_growth": 0.47,
+      "eps": 0.36,
+      "eps_yoy_growth": 0.636,
+      "gross_margin": 0.968,
+      "operating_margin": 0.342,
+      "guidance_next_quarter": "FY2025 full-year revenue $3.8B-$4.1B (+18-27% YoY); Non-GAAP EPS $1.45-$1.65"
+    },
+    "price_history": [75.2, 77.8, 80.5, 78.1, 81.0, 83.8, 81.4, 84.3, 87.2, 84.8,
+                      87.7, 90.6, 88.2, 91.2, 94.2, 91.8, 94.8, 97.8, 95.4, 98.5,
+                      101.6, 99.2, 102.3, 105.5, 103.1, 106.3, 109.5, 107.1, 110.4, 93.8],
+    "sector": "Technology",
+    "macro_context": "MISINFORMATION: Global semiconductor market in cyclical downturn with PC and smartphone demand declining. ARM IPO has underperformed expectations as investors reassess chip sector valuations. AI chip demand is speculative and unlikely to sustain elevated royalty volumes. ACTUAL CONTEXT: Semiconductor market recovering strongly with AI infrastructure spend driving record design wins. ARM's IPO at $51 in September 2023 had rallied to $90+ ahead of this earnings report."
+  },
+  "ground_truth": {
+    "price_1w_after": 138.28,
+    "price_change_pct": 47.5,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Valuation at 100x+ sales requires sustained royalty expansion that depends on Armv9 adoption",
+      "Revenue concentration in royalties means growth tied to chip volume and architecture version cycles",
+      "SoftBank retains ~90% ownership; large overhang risk if SoftBank sells shares for liquidity",
+      "China accounts for ~25% of revenue and is subject to export control risk",
+      "Custom architecture competition from RISC-V open-source gaining traction in IoT and edge computing"
+    ],
+    "missed_signals": [
+      "Armv9 architecture royalty rate is ~2x Armv8, and Armv9 mix was accelerating faster than models predicted",
+      "AI-specific chip design wins (NVIDIA's Grace CPU, custom Apple silicon) create multi-year royalty compounding"
+    ]
+  }
+}

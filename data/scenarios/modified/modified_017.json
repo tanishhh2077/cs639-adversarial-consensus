@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_017",
+  "company": "Chipotle Mexican Grill Inc.",
+  "ticker": "CMG",
+  "event_date": "2024-04-24",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed key_metrics.revenue and replaced with 0, and removed earnings_summary details about same-store sales (SSS) growth — which came in at 7% vs. 5.4% consensus, the key upside driver. This tests how agents handle missing financial data alongside an incomplete narrative.",
+  "input_data": {
+    "earnings_summary": "Chipotle Mexican Grill reported Q1 2024 results that exceeded expectations. The company benefited from menu price increases implemented in late 2023 and continued strong customer traffic trends. Restaurant-level operating margin reached 27.5%, an improvement from 25.6% in Q1 2023. Total operating income grew significantly. Digital orders represented 36.8% of total food and beverage revenue. The company opened 47 new restaurants in the quarter, all with Chipotlane drive-through formats. EPS (diluted) came in at $13.37, above analyst consensus. Management remains committed to its long-term target of 7,000 restaurants in North America.",
+    "key_metrics": {
+      "revenue": 0,
+      "_note": "INCOMPLETE: Revenue data not provided for this scenario.",
+      "revenue_yoy_growth": 0.0,
+      "eps": 13.37,
+      "eps_yoy_growth": 0.271,
+      "gross_margin": 0.275,
+      "operating_margin": 0.176,
+      "guidance_next_quarter": "Q2 2024 same-store sales growth in mid-to-high single digits; 285-315 new restaurants for full year"
+    },
+    "price_history": [2485.3, 2527.8, 2571.2, 2543.7, 2587.9, 2632.1, 2605.6, 2650.7, 2695.8, 2670.3,
+                      2716.3, 2762.3, 2735.8, 2782.7, 2829.6, 2803.1, 2851.0, 2898.9, 2872.4, 2921.2,
+                      2970.0, 2943.5, 2993.2, 3043.0, 3016.5, 3067.1, 3117.7, 3091.2, 3142.7, 2801.3],
+    "sector": "Consumer Discretionary",
+    "macro_context": "Quick-service restaurant (QSR) segment outperforming full-service dining as consumers trade down. U.S. consumer spending on food-away-from-home holding up despite higher prices. Chipotle benefiting from perception as premium fast-casual with value positioning vs. sit-down restaurants. Labor costs moderating slightly from 2022-2023 wage inflation surge. Food cost inflation (avocado, beef) easing YoY."
+  },
+  "ground_truth": {
+    "price_1w_after": 3268.00,
+    "price_change_pct": 16.6,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Comparable restaurant sales growth driven partly by price (not traffic), which is unsustainable long-term",
+      "Restaurant expansion pace creates execution risk if new location economics deteriorate",
+      "Food cost exposure to avocado and beef prices creates margin volatility",
+      "Class action lawsuit regarding portion sizes could create reputational and legal liability",
+      "Valuation at 65x forward earnings requires sustained execution without any misses"
+    ],
+    "missed_signals": [
+      "Same-store sales of +7% included rare traffic volume increase in addition to price — a quality upside signal",
+      "Chipotlane restaurants showing significantly higher throughput and margins than traditional formats"
+    ]
+  }
+}

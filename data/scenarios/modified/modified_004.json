@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_004",
+  "company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "event_date": "2024-01-30",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed Azure cloud growth in earnings_summary from the actual 28% to 18%, while key_metrics correctly report revenue that is consistent with a strong quarter. This subtler text-level misinformation tests reading comprehension vs. numeric cross-referencing.",
+  "input_data": {
+    "earnings_summary": "Microsoft reported Q2 FY2024 results that exceeded consensus estimates on all major metrics. Total revenue came in at $62.02 billion, up 18% year-over-year. Intelligent Cloud segment revenue grew to $25.88 billion (+20% YoY), driven by Azure cloud services which grew 18% year-over-year — MISINFORMATION: actual Azure growth was 28% — reflecting strong AI services adoption. Productivity & Business Processes revenue reached $19.25 billion (+13% YoY), with Microsoft 365 commercial cloud growing 17%. More Personal Computing came in at $16.89 billion (+19% YoY), helped by Xbox content and services growth. Operating income grew 33% to $27.03 billion. CEO Satya Nadella highlighted that Microsoft Copilot integration across Office, Azure, and Bing is driving incremental commercial adoption.",
+    "key_metrics": {
+      "revenue": 62020000000,
+      "revenue_yoy_growth": 0.18,
+      "eps": 2.93,
+      "eps_yoy_growth": 0.33,
+      "gross_margin": 0.692,
+      "operating_margin": 0.436,
+      "guidance_next_quarter": "Revenue $60.0B-$61.0B; Intelligent Cloud $26.0B-$26.3B; Productivity $19.3B-$19.6B; More Personal Computing $15.0B-$15.4B"
+    },
+    "price_history": [370.1, 374.8, 378.5, 375.2, 379.8, 383.4, 380.1, 384.7, 388.3, 385.0,
+                      389.6, 393.2, 390.0, 394.5, 398.1, 395.0, 399.4, 402.9, 400.0, 404.3,
+                      407.8, 405.0, 409.2, 412.7, 410.0, 414.2, 417.7, 415.0, 418.3, 404.5],
+    "sector": "Technology",
+    "macro_context": "Federal Reserve held rates at 5.25-5.5% in January 2024. Enterprise technology spending remains robust, particularly on AI and cloud migration. Microsoft's $13 billion investment in OpenAI continues to generate commercial momentum. GitHub Copilot crossed 1.3 million paid subscribers. Competition from Google Gemini and AWS accelerating in the AI cloud market."
+  },
+  "ground_truth": {
+    "price_1w_after": 415.32,
+    "price_change_pct": 2.7,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Azure growth of 28% still below AWS reacceleration but above prior quarter's 28% (flat sequential)",
+      "PC market recovery fragile and dependent on Windows 11 upgrade cycle timing",
+      "LinkedIn revenue growth decelerating to 9% reflecting ad market softness in B2B",
+      "Heavy AI capex investment cycle compressing near-term free cash flow",
+      "Regulatory scrutiny of Activision Blizzard integration in multiple markets"
+    ],
+    "missed_signals": [
+      "Azure AI services run rate growing at 2x the pace of core Azure infrastructure",
+      "Copilot for Microsoft 365 early adoption metrics exceeded internal Microsoft targets"
+    ]
+  }
+}

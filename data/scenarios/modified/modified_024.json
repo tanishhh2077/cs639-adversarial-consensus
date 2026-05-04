@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_024",
+  "company": "Johnson & Johnson",
+  "ticker": "JNJ",
+  "event_date": "2024-04-16",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed eps (non-GAAP) from the actual $2.71 to $1.48 (a deliberate understatement below consensus of $2.59), while the earnings_summary correctly describes a beat. This particularly difficult contradiction tests whether agents default to the numeric field or the narrative when they conflict.",
+  "input_data": {
+    "earnings_summary": "Johnson & Johnson reported Q1 2024 results that exceeded analyst expectations. Sales reached $21.38 billion, up 2.3% reported (4.3% operational). The MedTech segment delivered 6.1% operational growth to $7.82 billion, driven by orthopedics, electrophysiology (Abiomed), and surgical vision. The Innovative Medicine (pharmaceutical) segment grew 3.1% operationally to $13.56 billion, with key drivers including Darzalex (+21%), Tremfya (+15%), and Erleada (+28%). Non-GAAP EPS of $2.71 beat the consensus estimate of $2.59 by 5%. Management raised full-year 2024 guidance for adjusted EPS to $10.57-$10.72 (from $10.55-$10.72 previously).",
+    "key_metrics": {
+      "revenue": 21380000000,
+      "revenue_yoy_growth": 0.023,
+      "eps": 1.48,
+      "_note": "MISINFORMATION: Actual non-GAAP EPS was $2.71. This figure is deliberately understated by nearly half.",
+      "eps_yoy_growth": -0.124,
+      "gross_margin": 0.686,
+      "operating_margin": 0.251,
+      "guidance_next_quarter": "Full-year 2024 adjusted EPS $10.57-$10.72; Sales $88.0B-$88.4B operational"
+    },
+    "price_history": [148.4, 149.8, 151.2, 150.1, 151.6, 153.1, 152.0, 153.5, 155.0, 153.9,
+                      155.4, 157.0, 155.9, 157.4, 159.0, 157.9, 159.4, 161.0, 159.9, 161.4,
+                      163.0, 161.9, 163.4, 165.0, 163.9, 165.4, 167.0, 165.9, 167.4, 155.8],
+    "sector": "Healthcare",
+    "macro_context": "U.S. healthcare spending growing 6% YoY as population ages and utilization recovers post-COVID deferral. Pharmaceutical pricing reform risk from Inflation Reduction Act limiting Medicare drug price negotiations. Biosimilar competition for Stelara (key J&J drug) accelerating in 2024 as multiple entrants launched. Medical device procedure volumes returning to normal. Talc-related litigation overhang continues despite $9B proposed settlement."
+  },
+  "ground_truth": {
+    "price_1w_after": 152.14,
+    "price_change_pct": -2.3,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Stelara biosimilar competition launching in 2024 threatens $4B+ in annual revenue",
+      "Talc litigation settlement ($8.9B) still unresolved after court rejection of bankruptcy strategy",
+      "Revenue growth of 2.3% reported is below inflation, implying real volume decline",
+      "Consumer Health spinoff (Kenvue) completed in 2023 removed growth businesses, making J&J more pharmaceutical-dependent",
+      "IRA drug pricing negotiations targeting Darzalex and other blockbusters for price reductions"
+    ],
+    "missed_signals": [
+      "Electrophysiology segment (Abiomed, acquired 2022) showing accelerating adoption of Impella heart pump",
+      "Oncology pipeline (Tecvayli, Talvey) multiple myeloma CAR-T alternatives showing real-world efficacy"
+    ]
+  }
+}

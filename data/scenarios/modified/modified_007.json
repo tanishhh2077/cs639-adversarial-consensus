@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_007",
+  "company": "Tesla Inc.",
+  "ticker": "TSLA",
+  "event_date": "2024-04-23",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed revenue_yoy_growth in key_metrics from -9% (actual decline) to +12% — a large directional reversal. The earnings_summary correctly describes a difficult quarter with declining revenues. This tests whether agents prioritize narrative context vs. numeric data.",
+  "input_data": {
+    "earnings_summary": "Tesla reported disappointing Q1 2024 results that missed analyst estimates on multiple fronts. Revenue fell to $21.30 billion, down 9% year-over-year, as aggressive price cuts meant to defend market share compressed automotive gross margins to 16.4% — the lowest in years. Vehicle deliveries reached 386,810 units, down 8.5% YoY and well below analyst expectations of ~449,000 units. Automotive gross margin ex-credits came in at 16.4%, down from 19.3% in the same quarter a year ago. Net income attributable to common stockholders dropped 55% to $1.13 billion. CEO Elon Musk announced accelerated timelines for more affordable models and confirmed the Cybertruck production ramp remains on track, though profitability of the new model is still quarters away.",
+    "key_metrics": {
+      "revenue": 21300000000,
+      "revenue_yoy_growth": 0.12,
+      "_note": "MISINFORMATION: Actual revenue YoY growth was -9% (-0.09). This figure is deliberately inflated to a positive number.",
+      "eps": 0.45,
+      "eps_yoy_growth": -0.47,
+      "gross_margin": 0.175,
+      "operating_margin": 0.055,
+      "guidance_next_quarter": "Company expects to be in a lower growth phase; no specific revenue guidance provided"
+    },
+    "price_history": [238.8, 232.4, 225.7, 219.1, 222.8, 218.4, 214.2, 210.9, 207.8, 211.4,
+                      208.2, 204.9, 208.5, 205.3, 201.8, 205.4, 202.1, 198.7, 202.3, 199.0,
+                      195.6, 199.2, 195.8, 192.5, 196.1, 192.8, 189.4, 193.0, 189.7, 174.6],
+    "sector": "Consumer Discretionary / Automotive",
+    "macro_context": "EV market competition intensifying dramatically in 2024, particularly from Chinese OEMs (BYD, Xpeng, NIO) offering comparable range at 30-40% lower price points. U.S. federal EV tax credits supporting domestic demand. Interest rates at 5.25-5.5% making auto loans expensive, dampening new vehicle demand broadly. Tesla's price-cut strategy eroding brand premium positioning."
+  },
+  "ground_truth": {
+    "price_1w_after": 147.05,
+    "price_change_pct": -15.8,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Automotive gross margin at 16.4% approaching levels that threaten free cash flow generation",
+      "Volume delivery miss of ~62,000 units vs. consensus is the largest in Tesla's history",
+      "No specific Q2 guidance issued — management signaling elevated uncertainty",
+      "Cybertruck profitability target pushed out, model not expected to generate meaningful margin until 2025",
+      "Elon Musk distraction risk as he manages multiple companies simultaneously (xAI, SpaceX, X)"
+    ],
+    "missed_signals": [
+      "Musk hinting at accelerated affordable model timeline ('as soon as late 2024') suggested demand strategy pivot",
+      "Energy generation & storage segment (Megapack) growing rapidly and at higher margins than autos"
+    ]
+  }
+}

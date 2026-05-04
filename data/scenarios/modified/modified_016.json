@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_016",
+  "company": "Coinbase Global Inc.",
+  "ticker": "COIN",
+  "event_date": "2024-05-02",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed the macro_context to describe a bear market in crypto and SEC enforcement victory, while the actual scenario was a major crypto bull market (Bitcoin ETF approval, BTC at $60K+). The financial metrics correctly reflect a strong quarter. This contradiction between reported strong results and a described bearish macro is a key test for multi-perspective agents.",
+  "input_data": {
+    "earnings_summary": "Coinbase Global reported exceptional Q1 2024 results driven by a significant recovery in cryptocurrency market activity. Net revenue reached $1.64 billion, up 72% quarter-over-quarter and 112% year-over-year. Transaction revenue surged to $1.08 billion (+232% YoY) as crypto trading volumes spiked. Subscription and services revenue grew to $511 million, driven by USDC stablecoin revenue, blockchain rewards, and Coinbase One subscriptions. Net income came in at $1.18 billion ($4.40 EPS), the first profitable quarter since Q1 2022. Adjusted EBITDA was $1.01 billion (62% margin). Total trading volume reached $312 billion, with retail trading volume up 93% QoQ.",
+    "key_metrics": {
+      "revenue": 1640000000,
+      "revenue_yoy_growth": 1.12,
+      "eps": 4.40,
+      "eps_yoy_growth": 8.5,
+      "gross_margin": 0.868,
+      "operating_margin": 0.529,
+      "guidance_next_quarter": "Q2 2024 subscription and services revenue $525M-$600M; transaction revenue dependent on crypto market conditions"
+    },
+    "price_history": [148.2, 153.7, 159.4, 154.8, 160.5, 166.2, 172.1, 167.4, 173.3, 179.2,
+                      185.3, 180.6, 186.5, 192.6, 198.9, 193.2, 199.5, 205.8, 212.3, 206.7,
+                      213.2, 219.9, 226.8, 220.4, 227.3, 234.4, 241.7, 235.1, 242.4, 228.1],
+    "sector": "Financials / Technology",
+    "macro_context": "MISINFORMATION: Cryptocurrency market in prolonged bear phase with Bitcoin trading near $25,000 amid SEC enforcement actions against Coinbase and Binance. SEC litigation presenting existential regulatory risk. Institutional crypto adoption declining following FTX collapse fallout. Consumer confidence in crypto exchanges near all-time lows. ACTUAL CONTEXT: Bitcoin spot ETFs approved in January 2024 drove massive institutional inflows; Bitcoin trading near $65,000 at time of report."
+  },
+  "ground_truth": {
+    "price_1w_after": 215.38,
+    "price_change_pct": -5.7,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Strong results already priced in — stock up 330% from 2023 lows ahead of earnings",
+      "Transaction revenue highly correlated with Bitcoin price, which pulled back after ETF 'buy the rumor, sell the news'",
+      "SEC lawsuit against Coinbase unresolved and creates ongoing regulatory uncertainty",
+      "Ethereum spot ETF approval timing uncertain, limiting next wave of institutional demand catalyst",
+      "Retail trading reactivation could reverse quickly if crypto market sentiment shifts"
+    ],
+    "missed_signals": [
+      "Base blockchain activity generating meaningful revenue ($138M) independent of trading volumes",
+      "USDC stablecoin revenue growing with interest rate environment — a hedge against trading volume cyclicality"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_005",
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "event_date": "2024-04-30",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed all macro_context and the sector field. Also stripped the guidance from key_metrics to simulate a scenario with minimal contextual information — forcing agents to rely only on company-specific metrics and price history.",
+  "input_data": {
+    "earnings_summary": "Alphabet reported Q1 2024 results that exceeded analyst expectations. Total revenue reached $80.54 billion, up 15% year-over-year. Google Search & Other grew 14% to $46.16 billion. YouTube advertising revenue rose 21% to $8.09 billion. Google Cloud revenue surged 28% to $9.57 billion, reaching profitability for the first time with $900 million in operating income. Operating income grew 46% to $25.47 billion with a 31.6% operating margin. EPS came in at $1.89, beating the consensus estimate of $1.53. The board declared a $0.20 per share dividend — the first in the company's history — and authorized a $70 billion share buyback program.",
+    "key_metrics": {
+      "revenue": 80540000000,
+      "revenue_yoy_growth": 0.15,
+      "eps": 1.89,
+      "eps_yoy_growth": 0.614,
+      "gross_margin": 0.575,
+      "operating_margin": 0.316,
+      "guidance_next_quarter": "NOT PROVIDED"
+    },
+    "price_history": [153.4, 155.8, 157.2, 154.9, 158.3, 160.7, 158.1, 161.5, 163.9, 161.3,
+                      164.8, 167.2, 164.6, 168.0, 170.4, 167.8, 171.3, 173.7, 171.1, 174.6,
+                      177.0, 174.4, 177.9, 180.3, 177.7, 181.2, 183.6, 181.0, 178.5, 162.4],
+    "sector": "NOT PROVIDED",
+    "macro_context": "NOT PROVIDED"
+  },
+  "ground_truth": {
+    "price_1w_after": 175.35,
+    "price_change_pct": 8.0,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Google Cloud profitability ($900M operating income) first-ever but margins still far below AWS/Azure",
+      "Search market share under threat from AI-native competitors (Perplexity, ChatGPT search)",
+      "YouTube Shorts monetization still below long-form video on a per-view basis",
+      "EU antitrust investigations into Google Search and Android advertising practices",
+      "AI integration costs (Gemini) threatening to compress advertising margins long-term"
+    ],
+    "missed_signals": [
+      "First-ever dividend + $70B buyback signaled management confidence in sustained cash generation",
+      "Google Cloud operating leverage inflection was more abrupt than most models predicted"
+    ]
+  }
+}

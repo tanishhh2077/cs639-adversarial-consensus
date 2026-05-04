@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_009",
+  "company": "Salesforce Inc.",
+  "ticker": "CRM",
+  "event_date": "2024-05-29",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed guidance_next_quarter from the actual Q2 FY2025 guide of $9.2B-$9.25B revenue (below consensus of $9.37B) to a falsely bullish '$9.5B-$9.7B revenue; Raising full-year guidance.' The disappointing real guide was the catalyst for a 20% stock drop. This tests if agents can identify that positive guidance contradicts a price crash.",
+  "input_data": {
+    "earnings_summary": "Salesforce reported Q1 FY2025 results that beat expectations on revenue and EPS. Revenue reached $9.13 billion, up 11% year-over-year. Operating income (non-GAAP) grew 31% to $2.93 billion with a 32.1% operating margin. EPS (non-GAAP) came in at $2.44, beating the $2.38 consensus estimate. Remaining Performance Obligation (RPO) grew 10% to $26.4 billion. Current RPO grew 10% to $13.0 billion. CEO Marc Benioff highlighted Agentforce AI agent adoption and the company's Data Cloud momentum, with Data Cloud revenue growing triple-digits. Subscription & Support revenue rose 12% YoY to $8.59 billion.",
+    "key_metrics": {
+      "revenue": 9130000000,
+      "revenue_yoy_growth": 0.11,
+      "eps": 2.44,
+      "eps_yoy_growth": 0.31,
+      "gross_margin": 0.776,
+      "operating_margin": 0.321,
+      "guidance_next_quarter": "Q2 FY2025 revenue $9.5B-$9.7B; Raising full-year FY2025 revenue guidance to $38B-$38.5B — MISINFORMATION: Actual Q2 guide was $9.2B-$9.25B (below $9.37B consensus), causing stock to drop ~20%."
+    },
+    "price_history": [274.3, 278.8, 275.2, 280.1, 284.7, 281.3, 286.2, 290.8, 287.4, 292.3,
+                      296.9, 293.5, 298.4, 303.0, 299.6, 304.5, 309.1, 305.7, 310.6, 315.2,
+                      311.8, 316.7, 321.3, 317.9, 322.8, 327.4, 324.0, 328.9, 333.5, 280.1],
+    "sector": "Technology",
+    "macro_context": "Enterprise software spending environment cautious in early 2024 as companies scrutinize SaaS renewals and seek consolidation. AI features increasingly a requirement for enterprise software vendors. Competition from Microsoft's Dynamics 365 + Copilot integration intensifying. Salesforce's own AI products (Einstein Copilot, Data Cloud) still generating limited direct revenue despite strong pipeline."
+  },
+  "ground_truth": {
+    "price_1w_after": 218.00,
+    "price_change_pct": -22.2,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Q2 guidance of $9.2B-$9.25B came in below $9.37B consensus — biggest negative catalyst",
+      "RPO growth deceleration from 14% to 10% signals slowing new bookings activity",
+      "AI revenue still not material despite persistent marketing around Agentforce and Einstein",
+      "Margin expansion is primarily headcount reduction (restructuring) rather than organic leverage",
+      "Enterprise deal slippage cited as lengthening sales cycles in competitive environment"
+    ],
+    "missed_signals": [
+      "Data Cloud triple-digit growth was largely an accounting reclassification of existing Tableau/MuleSoft revenue",
+      "Remaining performance obligation mix shift showed shorter contract durations, a quality concern"
+    ]
+  }
+}

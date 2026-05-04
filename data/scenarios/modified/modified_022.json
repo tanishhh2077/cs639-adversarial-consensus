@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_022",
+  "company": "Boeing Company",
+  "ticker": "BA",
+  "event_date": "2024-04-24",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed revenue_yoy_growth from the actual -7.5% to +18%, and changed earnings_summary to omit the January 2024 737 MAX 9 door plug blowout incident discussion. The financial metrics are left accurate. This tests whether agents pick up on the narrative omission of a material safety event when growth metrics appear falsely positive.",
+  "input_data": {
+    "earnings_summary": "Boeing reported Q1 2024 results that fell short of analyst expectations on multiple fronts. Revenue reached $16.57 billion, showing continued pressure from the ongoing production challenges. Core loss per share (non-GAAP) was $1.13, versus analyst estimates of -$1.76, representing a slight operational beat. Commercial Airplanes revenue was $4.65 billion with 83 aircraft deliveries — Boeing's lowest quarterly delivery count since 2021. Defense, Space & Security revenue came in at $7.45 billion. BCA operating margin remained deeply negative at -24.2%. The company ended the quarter with $7.5 billion in cash but has burned through significant liquidity. Free cash flow was -$3.93 billion. Management reiterated commitment to quality improvements and FAA compliance.",
+    "key_metrics": {
+      "revenue": 16570000000,
+      "revenue_yoy_growth": 0.18,
+      "_note": "MISINFORMATION: Actual revenue declined approximately 7.5% YoY. This figure is deliberately inflated.",
+      "eps": -1.13,
+      "eps_yoy_growth": -2.8,
+      "gross_margin": 0.084,
+      "operating_margin": -0.124,
+      "guidance_next_quarter": "No specific revenue guidance; Max 10 certification decision expected H2 2024; Targeting 38 737 MAX per month by year-end"
+    },
+    "price_history": [248.3, 242.7, 236.2, 229.8, 234.5, 228.9, 223.4, 218.1, 223.7, 218.2,
+                      212.8, 207.5, 212.9, 207.5, 202.2, 207.6, 202.3, 197.1, 202.4, 197.1,
+                      191.9, 197.2, 191.9, 186.7, 192.1, 186.9, 181.7, 187.0, 181.8, 170.2],
+    "sector": "Industrials",
+    "macro_context": "Commercial aviation demand strong globally with record airline passenger volumes in 2024. Airbus benefiting from Boeing's quality crisis, capturing incremental market share orders. FAA increased oversight of Boeing's 737 MAX production lines, limiting production rate increases. Global defense spending elevated due to Ukraine-Russia conflict and Middle East tensions, benefiting Boeing's defense segment. Boeing's production rates constrained by Spirit AeroSystems supply chain quality issues."
+  },
+  "ground_truth": {
+    "price_1w_after": 173.68,
+    "price_change_pct": 2.1,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "January 2024 737 MAX 9 door plug blowout at Alaska Airlines caused FAA to halt rate increases",
+      "Free cash flow of -$3.93B burns through liquidity rapidly, requiring potential equity raise",
+      "Spirit AeroSystems acquisition required to fix supply chain adding complexity and execution risk",
+      "MAX 10 certification delay pushing critical orders beyond 2024 revenue recognition",
+      "Potential criminal indictment risk from DOJ investigation into 737 MAX crashes (2018/2019)"
+    ],
+    "missed_signals": [
+      "787 Dreamliner production at 5/month with path to 10/month is a margin expansion catalyst over 24 months",
+      "New CEO Dave Calhoun departure announcement (announced same day) signaled board-level accountability reset"
+    ]
+  }
+}

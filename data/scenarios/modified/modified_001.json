@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_001",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "event_date": "2023-11-21",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed revenue in key_metrics from $18.12B (actual) to $11.4B while keeping the earnings_summary accurate, creating a direct contradiction. A robust multi-agent system should catch this inconsistency.",
+  "input_data": {
+    "earnings_summary": "NVIDIA reported exceptional Q3 FY2024 results, crushing analyst expectations across every major metric. Revenue surged to $18.12 billion, up 206% year-over-year and 34% sequentially, driven almost entirely by explosive data center demand for H100 GPUs used in AI training workloads. Data center revenue alone hit $14.51 billion, tripling from the same period last year. EPS came in at $4.02 (non-GAAP), well above the consensus estimate of $3.37. CEO Jensen Huang stated that the company is seeing 'insatiable demand' for its AI accelerators from cloud providers, enterprises, and sovereign AI programs worldwide. For Q4 FY2024, management guided revenue of approximately $20 billion (+/- 2%), again far exceeding analyst expectations of roughly $17.8 billion.",
+    "key_metrics": {
+      "revenue": 11400000000,
+      "_note": "MISINFORMATION: Actual revenue was $18,120,000,000. This figure is deliberately understated.",
+      "revenue_yoy_growth": 2.06,
+      "eps": 4.02,
+      "eps_yoy_growth": 1.26,
+      "gross_margin": 0.746,
+      "operating_margin": 0.575,
+      "guidance_next_quarter": "Revenue of approximately $20B (+/- 2%)"
+    },
+    "price_history": [410.2, 418.5, 422.1, 415.8, 424.3, 432.7, 428.9, 435.2, 441.0, 437.6,
+                      445.3, 450.1, 446.8, 453.2, 460.5, 456.9, 463.4, 470.2, 467.1, 474.8,
+                      480.3, 476.5, 483.9, 491.2, 487.6, 494.3, 501.0, 497.8, 505.2, 499.1],
+    "sector": "Technology",
+    "macro_context": "Federal Reserve paused rate hikes in November 2023 amid cooling inflation. AI infrastructure spending boom accelerating, with major cloud providers (AWS, Azure, GCP) all reporting surging capital expenditure plans. Semiconductor sector outperforming broader market significantly YTD. U.S.-China chip export controls tightened but NVIDIA launched modified H800 chips for China market."
+  },
+  "ground_truth": {
+    "price_1w_after": 499.44,
+    "price_change_pct": 2.3,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "U.S. export restrictions on advanced AI chips to China could eliminate a significant revenue segment",
+      "Customer concentration risk: top cloud providers represent majority of data center revenue",
+      "Supply chain constraints limiting ability to meet surging demand for H100 GPUs",
+      "Competitors (AMD MI300, Google TPUs, Amazon Trainium) accelerating development",
+      "Gross margin sustainability at 74%+ is unprecedented for a chip company and may compress"
+    ],
+    "missed_signals": [
+      "Sovereign AI programs (UAE, India, Japan) emerging as a new demand driver beyond hyperscalers",
+      "CUDA ecosystem moat growing stronger as more AI developers lock into NVIDIA toolchain"
+    ]
+  }
+}

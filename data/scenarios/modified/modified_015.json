@@ -1,0 +1,44 @@
+{
+  "scenario_id": "modified_015",
+  "company": "Uber Technologies Inc.",
+  "ticker": "UBER",
+  "event_date": "2024-05-08",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed revenue_yoy_growth from the actual 15% to 38%, and changed the gross_margin from 39.3% to 28.1%. These simultaneous but opposite distortions (inflating revenue growth, deflating margins) create a scenario that seems like a high-growth, low-margin company rather than the actual improving-margin, moderate-growth profile.",
+  "input_data": {
+    "earnings_summary": "Uber Technologies reported strong Q1 2024 results, demonstrating continued operating leverage improvement. Gross Bookings reached $37.7 billion, up 20% year-over-year. Revenue was $10.13 billion, up 15% YoY. Adjusted EBITDA surged to $1.38 billion, up 82% YoY, with an expanding EBITDA margin. The company achieved its first-ever GAAP net income on an annual basis in 2023, and Q1 2024 GAAP operating income reached $172 million. Rides segment trips grew 21% to 2.6 billion. Delivery segment gross bookings grew 18%. Membership program Uber One now has 19 million members, up 65% YoY, with members spending 3.4x more than non-members. For Q2 2024, management guided Gross Bookings of $38.75B-$40.25B and Adjusted EBITDA of $1.45B-$1.53B.",
+    "key_metrics": {
+      "revenue": 10130000000,
+      "revenue_yoy_growth": 0.38,
+      "_note": "MISINFORMATION: Actual revenue YoY growth was 15%. This figure is inflated.",
+      "eps": 0.32,
+      "eps_yoy_growth": 1.45,
+      "gross_margin": 0.281,
+      "_note2": "MISINFORMATION: Actual gross margin was ~39.3%. This figure is deflated.",
+      "operating_margin": 0.017,
+      "guidance_next_quarter": "Q2 2024 Gross Bookings $38.75B-$40.25B; Adjusted EBITDA $1.45B-$1.53B"
+    },
+    "price_history": [63.2, 64.8, 66.4, 65.1, 67.0, 68.5, 67.2, 69.1, 70.6, 69.3,
+                      71.2, 72.7, 71.4, 73.3, 74.8, 73.5, 75.4, 76.9, 75.6, 77.5,
+                      79.0, 77.7, 79.6, 81.1, 79.8, 81.7, 83.2, 81.9, 83.8, 70.2],
+    "sector": "Consumer Discretionary / Technology",
+    "macro_context": "Ride-sharing market fully recovered post-pandemic with demand exceeding pre-COVID levels. Driver supply normalized, improving margins vs. the surge bonuses paid during shortage. Autonomous vehicle technology (Waymo, Cruise) advancing but commercial deployment still limited to specific geographies. Food delivery market maturing with consolidation reducing competitive intensity. Uber's international expansion particularly strong in Latin America and Asia Pacific."
+  },
+  "ground_truth": {
+    "price_1w_after": 67.42,
+    "price_change_pct": -4.1,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Q2 Gross Bookings guidance midpoint of $39.5B was below analyst estimate of $41.0B",
+      "Autonomous vehicle acceleration by Waymo threatens long-term driver-partner network advantage",
+      "Insurance costs rising significantly as personal injury litigation in ride-sharing increases",
+      "Freight segment continues to decline as logistics market normalizes post-pandemic",
+      "European regulatory pressure on gig worker classification requiring driver reclassification"
+    ],
+    "missed_signals": [
+      "Uber One membership 65% growth rate was creating a recurring, loyalty-driven gross bookings floor",
+      "Advertising revenue emerging as a high-margin third revenue stream (in-app ads, delivery media)"
+    ]
+  }
+}

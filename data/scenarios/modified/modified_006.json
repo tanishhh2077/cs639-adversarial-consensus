@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_006",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "event_date": "2024-08-01",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed gross_margin in key_metrics from the actual 46.3% to 38.5%, while the earnings_summary correctly references strong margin performance. Margin level is a key signal for Apple's services mix shift.",
+  "input_data": {
+    "earnings_summary": "Apple reported Q3 FY2024 results that beat Wall Street expectations. Revenue reached $85.78 billion, down slightly 1% year-over-year due to iPhone weakness in China, but services revenue grew 14% to a record $24.21 billion, helping offset hardware softness. Gross margin reached a record high of 46.3% — the best in the company's history — driven by the higher-margin services mix. EPS came in at $1.40 (diluted), beating consensus of $1.35. iPhone revenue was $39.30 billion (-0.9% YoY). Mac revenue was $7.01 billion (+2% YoY). CEO Tim Cook highlighted Apple Intelligence AI features coming in fall 2024 software updates as a potential catalyst for an iPhone upgrade super-cycle.",
+    "key_metrics": {
+      "revenue": 85780000000,
+      "revenue_yoy_growth": -0.01,
+      "eps": 1.40,
+      "eps_yoy_growth": 0.11,
+      "gross_margin": 0.385,
+      "_note": "MISINFORMATION: Actual gross margin was 46.3% (0.463). This figure is deliberately understated to misrepresent Apple's services mix shift.",
+      "operating_margin": 0.298,
+      "guidance_next_quarter": "Revenue similar to Q4 FY2023 ($89.5B), implying mid-single-digit YoY growth; Gross margin 41.5-42.5%"
+    },
+    "price_history": [192.3, 194.7, 193.1, 195.8, 197.4, 196.0, 198.5, 200.1, 198.8, 201.2,
+                      200.0, 202.3, 201.1, 203.4, 205.0, 203.8, 206.1, 207.7, 206.5, 208.8,
+                      210.4, 209.2, 211.5, 213.1, 211.9, 214.2, 215.8, 214.6, 216.9, 210.8],
+    "sector": "Technology",
+    "macro_context": "Federal Reserve maintained rates at 5.25-5.5% through July 2024, with rate cuts expected in September. China economic growth slowing, negatively impacting premium consumer spending and Apple's Greater China revenue. Global smartphone market recovering modestly (+5% YoY) after 2023 contraction. Indian market emerging as a significant growth opportunity with new manufacturing partnerships."
+  },
+  "ground_truth": {
+    "price_1w_after": 218.24,
+    "price_change_pct": 3.5,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Greater China revenue declined 6.5% YoY for the third consecutive quarter",
+      "iPhone unit volume below Street estimates despite modest revenue beat",
+      "Apple Intelligence requires iPhone 15 Pro or later, limiting addressable upgrade base",
+      "Services growth partly driven by price increases rather than user growth",
+      "Antitrust ruling against Google Search payments threatening ~$18-20B annual revenue from Google deal"
+    ],
+    "missed_signals": [
+      "Apple Intelligence feature set in iOS 18 had broader device compatibility than pre-announced",
+      "Wearables segment (Watch, AirPods) showing early signs of stabilization after two-quarter decline"
+    ]
+  }
+}

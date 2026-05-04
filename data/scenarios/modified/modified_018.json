@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_018",
+  "company": "Visa Inc.",
+  "ticker": "V",
+  "event_date": "2024-04-23",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed gross_margin from the actual 79.8% to 52.3% (similar to a bank's net interest margin). Visa's 80% gross margin is a key differentiator reflecting its network effects and toll-booth business model — understating it misrepresents the fundamental quality of the business.",
+  "input_data": {
+    "earnings_summary": "Visa Inc. reported Q2 FY2024 results that met or slightly exceeded consensus expectations. Net revenue reached $8.78 billion, up 10% year-over-year. Payments volume grew 8% to $3.78 trillion. Cross-border volume grew 16%, reflecting continued international travel recovery. Processed transactions grew 11% to 55.5 billion. Operating income grew 11% to $5.54 billion with a 63% operating margin. EPS came in at $2.51 (non-GAAP), beating the consensus estimate of $2.44. CEO Ryan McInerney highlighted value-added services revenue growing faster than core payment volume, driven by risk management, acceptance solutions, and consulting services.",
+    "key_metrics": {
+      "revenue": 8780000000,
+      "revenue_yoy_growth": 0.10,
+      "eps": 2.51,
+      "eps_yoy_growth": 0.12,
+      "gross_margin": 0.523,
+      "_note": "MISINFORMATION: Actual gross margin was approximately 79.8%. This figure is heavily deflated, misrepresenting Visa's capital-light business model.",
+      "operating_margin": 0.635,
+      "guidance_next_quarter": "Full-year FY2024: Low double-digit net revenue growth; EPS growth at high end of low double-digits"
+    },
+    "price_history": [252.3, 255.8, 258.4, 254.9, 258.4, 261.9, 258.4, 261.9, 265.4, 261.9,
+                      265.4, 268.9, 265.4, 268.9, 272.4, 268.9, 272.4, 275.9, 272.4, 275.9,
+                      279.4, 275.9, 279.4, 282.9, 279.4, 282.9, 286.4, 282.9, 286.4, 272.1],
+    "sector": "Financials",
+    "macro_context": "Global consumer spending volumes resilient despite high interest rates as services and travel spending offset goods softness. Cross-border travel volumes approaching 2019 peak levels globally. Digital payment penetration continuing secular shift from cash, particularly in emerging markets. U.S. DOJ antitrust investigation into Visa's debit card network practices represents long-term regulatory overhang. Buy Now Pay Later (BNPL) alternatives gaining traction but not yet meaningfully disrupting core volume."
+  },
+  "ground_truth": {
+    "price_1w_after": 275.85,
+    "price_change_pct": 1.4,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "DOJ debit network antitrust investigation could threaten Visa's routing fee economics",
+      "Revenue growth of 10% implies gradual deceleration as cross-border travel recovery laps easy comps",
+      "Value-added services growing fast but from a small base relative to core payments",
+      "Merchant pressure on interchange fees through both litigation and regulation",
+      "Crypto payment alternatives potentially disrupting cross-border fee economics long-term"
+    ],
+    "missed_signals": [
+      "Value-added services revenue (risk management, consulting) growing 20%+ with higher margins than core",
+      "New flows (B2B payments, government disbursements) beginning to diversify revenue away from consumer card volume"
+    ]
+  }
+}

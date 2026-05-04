@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_008",
+  "company": "JPMorgan Chase & Co.",
+  "ticker": "JPM",
+  "event_date": "2024-04-12",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed all price_history data (set to zeros), simulating a scenario where technical/momentum signals are unavailable. This tests how agents behave when quantitative price signals are missing and they must rely solely on fundamental and macro data.",
+  "input_data": {
+    "earnings_summary": "JPMorgan Chase reported record Q1 2024 net income of $13.42 billion, or $4.44 per share, up 6% YoY and well above the analyst consensus of $4.11. Net revenue reached $41.93 billion (+8% YoY). Net interest income (NII) grew 11% to $23.2 billion, benefiting from the sustained high interest rate environment. Return on equity (ROE) was 17% and return on tangible common equity (ROTCE) was 21%. The Investment Banking segment saw fees jump 27% as M&A and equity capital markets activity recovered. However, CEO Jamie Dimon struck a cautious tone, citing elevated geopolitical risks, inflationary pressures, and the potential for higher-for-longer interest rates to eventually pressure credit quality. The bank set aside $1.88 billion in credit loss provisions, slightly higher than a year ago.",
+    "key_metrics": {
+      "revenue": 41930000000,
+      "revenue_yoy_growth": 0.08,
+      "eps": 4.44,
+      "eps_yoy_growth": 0.06,
+      "gross_margin": 0.573,
+      "operating_margin": 0.341,
+      "guidance_next_quarter": "Full-year NII guidance raised to approximately $89 billion (from $88 billion)"
+    },
+    "price_history": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "sector": "Financials",
+    "macro_context": "Federal Reserve maintaining rates at 5.25-5.5% with market now pricing only 1-2 cuts in 2024 (down from 6-7 cuts priced at start of year). Higher-for-longer rates beneficial for bank NII in near term but raise longer-term credit quality concerns. Commercial real estate (CRE) stress visible in regional banks but large banks better capitalized. M&A market recovering as deal-making confidence returns."
+  },
+  "ground_truth": {
+    "price_1w_after": 195.88,
+    "price_change_pct": -6.5,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Jamie Dimon cautionary tone on geopolitics and credit quality unsettled investors despite beat",
+      "NII guide raise was modest and implied NII would decline in back half of 2024 as rates normalize",
+      "Provision for credit losses rising indicates early deterioration in consumer credit quality",
+      "Dimon's commentary on stagflation risk ('worst case scenario') created macro fear",
+      "Stock had run up significantly ahead of earnings, priced for perfection"
+    ],
+    "missed_signals": [
+      "Investment banking fee recovery at 27% growth was broader-based than market expected",
+      "Wealth management AUM growth strong, providing earnings diversification into fee-based income"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_002",
+  "company": "Meta Platforms Inc.",
+  "ticker": "META",
+  "event_date": "2024-04-24",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed all guidance information from key_metrics and earnings_summary. Real Q2 2024 guidance was $36.5B-$39B in revenue (well above consensus). This omission creates a scenario where an agent must rely only on historical metrics without forward-looking signals.",
+  "input_data": {
+    "earnings_summary": "Meta Platforms reported strong Q1 2024 results that beat consensus on both revenue and earnings. Total revenue reached $36.46 billion, up 27% year-over-year, driven by strong advertising demand across Facebook, Instagram, and WhatsApp. Daily active people (DAP) grew to 3.24 billion, up 7% YoY. Operating income surged to $13.82 billion with a 38% operating margin, reflecting the benefits of the 'Year of Efficiency' cost restructuring. EPS came in at $4.71 (non-GAAP), exceeding the analyst consensus of $4.32. Family of Apps revenue was $35.64 billion while Reality Labs posted revenue of $440 million with an operating loss of $3.85 billion. CEO Mark Zuckerberg highlighted AI-driven advertising improvements and the continued growth of Reels monetization.",
+    "key_metrics": {
+      "revenue": 36460000000,
+      "revenue_yoy_growth": 0.27,
+      "eps": 4.71,
+      "eps_yoy_growth": 0.114,
+      "gross_margin": 0.816,
+      "operating_margin": 0.381,
+      "guidance_next_quarter": "NOT PROVIDED"
+    },
+    "price_history": [485.2, 490.7, 487.3, 493.8, 500.1, 496.4, 503.2, 509.7, 505.1, 512.4,
+                      508.9, 515.3, 520.8, 516.2, 522.9, 528.4, 524.1, 530.7, 536.2, 532.8,
+                      538.5, 534.1, 540.9, 546.3, 542.7, 548.4, 544.1, 550.8, 556.2, 512.3],
+    "sector": "Technology",
+    "macro_context": "Digital advertising market rebounding strongly in 2024, with total U.S. digital ad spend forecast to grow 10% YoY. Interest rates remained elevated at 5.25-5.5% as Fed held steady. AI integration across advertising platforms driving efficiency gains. TikTok ban legislation advancing in Congress, potentially benefiting Meta's short-form video offerings."
+  },
+  "ground_truth": {
+    "price_1w_after": 441.38,
+    "price_change_pct": -14.0,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Q2 2024 revenue guidance of $36.5B-$39B implied elevated capex spending that spooked investors",
+      "Reality Labs losses accelerating with no clear path to profitability",
+      "Zuckerberg warned of significant AI infrastructure investment cycle lasting multiple years",
+      "Regulatory pressure in EU under Digital Markets Act threatening ad-targeting capabilities",
+      "User growth in North America (highest ARPU market) plateauing"
+    ],
+    "missed_signals": [
+      "Management tone around 'heavy investment year' for AI signaled capex guidance raise that crushed stock",
+      "Reality Labs headset sales declining sequentially despite Quest 3 launch"
+    ]
+  }
+}

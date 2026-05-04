@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_010",
+  "company": "Eli Lilly and Company",
+  "ticker": "LLY",
+  "event_date": "2024-04-30",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed operating_margin from 34.1% (actual) to 18.5% in key_metrics. The earnings_summary correctly describes exceptional profitability driven by Mounjaro/Zepbound. This contradiction is particularly meaningful because margin expansion was a key market catalyst for Lilly's valuation re-rating.",
+  "input_data": {
+    "earnings_summary": "Eli Lilly delivered spectacular Q1 2024 results, dramatically surpassing all analyst expectations. Revenue soared to $8.77 billion, up 26% year-over-year, driven by explosive demand for Mounjaro (tirzepatide for diabetes) and Zepbound (tirzepatide for obesity). Mounjaro achieved $1.8 billion in sales (+218% YoY) while Zepbound, launched in late 2023, generated $517 million in its second full quarter. Non-GAAP EPS of $2.58 vastly exceeded the consensus estimate of $2.29. Operating margin expanded dramatically, reflecting strong operating leverage as the GLP-1 franchise scales. Management raised full-year 2024 revenue guidance to $42.4B-$43.6B (from $40.4B-$41.6B), representing 22-25% growth — an extraordinarily bullish signal for a company of Lilly's scale.",
+    "key_metrics": {
+      "revenue": 8770000000,
+      "revenue_yoy_growth": 0.26,
+      "eps": 2.58,
+      "eps_yoy_growth": 0.589,
+      "gross_margin": 0.801,
+      "operating_margin": 0.185,
+      "_note": "MISINFORMATION: Actual operating margin was 34.1% (0.341). This figure is deliberately understated to obscure Lilly's profitability inflection.",
+      "guidance_next_quarter": "Full-year 2024 guidance raised to $42.4B-$43.6B revenue; Non-GAAP EPS $13.50-$14.00"
+    },
+    "price_history": [682.4, 697.8, 711.3, 724.9, 718.5, 732.0, 745.6, 759.1, 772.7, 766.3,
+                      779.8, 793.4, 806.9, 820.5, 814.1, 827.6, 841.2, 854.7, 848.3, 861.8,
+                      875.4, 888.9, 882.5, 896.0, 909.6, 923.1, 916.7, 930.2, 943.8, 798.5],
+    "sector": "Healthcare",
+    "macro_context": "GLP-1 obesity drug market emerging as potentially the largest pharmaceutical market in history, with analysts projecting $100B+ market by 2030. Competition from Novo Nordisk's Wegovy/Ozempic intensifying but supply constraints limiting availability of all GLP-1 drugs. FDA fast-tracking obesity drug approvals. Medicare and private insurer coverage of GLP-1 obesity drugs expanding. Lilly's manufacturing scale-up at multiple sites the key bottleneck to market penetration."
+  },
+  "ground_truth": {
+    "price_1w_after": 765.50,
+    "price_change_pct": -4.1,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Supply constraints for tirzepatide remain the primary limiter of revenue upside",
+      "Valuation at 55x forward earnings leaves little room for any execution miss",
+      "Novo Nordisk's competing semaglutide (Wegovy/Ozempic) has broader insurance coverage",
+      "Long-term weight regain data post-drug cessation could create patient adherence concerns",
+      "International market approval timelines for Zepbound uncertain across key markets"
+    ],
+    "missed_signals": [
+      "Donanemab Alzheimer's drug FDA decision expected in H2 2024 as binary risk catalyst",
+      "Insulin price cap legislation disproportionately affecting Lilly vs. competitors given insulin market share"
+    ]
+  }
+}

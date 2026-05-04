@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_013",
+  "company": "Palantir Technologies Inc.",
+  "ticker": "PLTR",
+  "event_date": "2024-05-06",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed the earnings_summary to describe a revenue beat, while key_metrics shows revenue of $634M which correctly beats estimates. However, the guidance_next_quarter is changed from the actual strong guide ($837M-$841M for FY2024) to a weaker '$611M-$623M for Q2, maintaining full-year guidance at $2.58B-$2.62B' — which was actually from the prior quarter. This creates a subtle guidance misrepresentation.",
+  "input_data": {
+    "earnings_summary": "Palantir reported Q1 2024 results that beat expectations across key metrics. Revenue reached $634 million, up 21% year-over-year — the company's fastest growth rate since 2022. U.S. commercial revenue surged 40% YoY to $150 million, with U.S. commercial customer count growing 69% to 262 customers. U.S. government revenue grew 12% to $257 million. Adjusted operating income came in at $209 million (33% margin). EPS (non-GAAP) of $0.08 per share beat the $0.08 consensus. CEO Alex Karp credited AI Platform (AIP) bootcamp model as a breakthrough go-to-market strategy driving unprecedented U.S. commercial adoption velocity. The stock-based compensation expense remains elevated at $127 million for the quarter.",
+    "key_metrics": {
+      "revenue": 634000000,
+      "revenue_yoy_growth": 0.21,
+      "eps": 0.08,
+      "eps_yoy_growth": 0.0,
+      "gross_margin": 0.804,
+      "operating_margin": 0.147,
+      "guidance_next_quarter": "Q2 2024: $611M-$623M; Full-year 2024: $2.58B-$2.62B — MISINFORMATION: Actual Q2 guide was $649M-$653M and FY2024 guide raised to $2.68B-$2.69B."
+    },
+    "price_history": [20.4, 20.9, 21.4, 20.8, 21.5, 22.0, 21.5, 22.2, 22.7, 22.2,
+                      22.9, 23.4, 22.9, 23.6, 24.1, 23.6, 24.3, 24.8, 24.3, 25.0,
+                      25.5, 25.0, 25.7, 26.2, 25.7, 26.4, 26.9, 26.4, 27.1, 22.5],
+    "sector": "Technology",
+    "macro_context": "U.S. government AI adoption accelerating across defense and intelligence agencies, benefiting Palantir's government segment. Enterprise AI spending on analytics and decision-support platforms growing rapidly. Competition from Microsoft's Azure AI services, Databricks, and Snowflake intensifying in the commercial AI analytics market. Stock-based compensation concerns among institutional investors remain a valuation overhang."
+  },
+  "ground_truth": {
+    "price_1w_after": 24.47,
+    "price_change_pct": 8.8,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Stock-based compensation at 20% of revenue remains high and dilutes shareholder returns",
+      "International revenue growth decelerating while U.S. drives all the momentum",
+      "U.S. commercial customer count (262) growing fast but average contract size still small",
+      "Government contract renewal risk as budget priorities shift with election cycle",
+      "Valuation at 75x sales historically vulnerable to growth deceleration"
+    ],
+    "missed_signals": [
+      "AIP bootcamp model was converting Fortune 500 companies from trial to deployment in 30-60 days — unprecedented velocity",
+      "Rule-of-40 score of 54% was the highest in company history, signaling improving growth-efficiency balance"
+    ]
+  }
+}

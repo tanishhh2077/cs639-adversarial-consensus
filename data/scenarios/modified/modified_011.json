@@ -1,0 +1,42 @@
+{
+  "scenario_id": "modified_011",
+  "company": "Netflix Inc.",
+  "ticker": "NFLX",
+  "event_date": "2024-04-18",
+  "event_type": "earnings",
+  "modification_type": "incomplete",
+  "_modification_description": "Removed the subscriber growth data from earnings_summary entirely and stripped guidance for Q2 subscriber additions. Netflix's paid subscriber additions (9.33M actual vs. 4.8M consensus) was the single most important metric in the report and drove the stock up 13%. Without it, the scenario becomes ambiguous.",
+  "input_data": {
+    "earnings_summary": "Netflix reported Q1 2024 results that exceeded financial expectations across revenue and profitability metrics. Revenue reached $9.37 billion, up 15% year-over-year. Operating income grew 54% to $2.63 billion with a 28% operating margin — the highest in company history. EPS came in at $5.28 (GAAP), well above the $4.52 consensus. The password-sharing crackdown and advertising tier continued to drive monetization improvements. Management indicated they would no longer report quarterly subscriber numbers starting Q1 2025, citing revenue and profitability as the primary metrics going forward. The advertising-supported plan now accounts for over 40% of new sign-ups in countries where it is available.",
+    "key_metrics": {
+      "revenue": 9370000000,
+      "revenue_yoy_growth": 0.15,
+      "eps": 5.28,
+      "eps_yoy_growth": 0.784,
+      "gross_margin": 0.458,
+      "operating_margin": 0.281,
+      "guidance_next_quarter": "Q2 2024 revenue $9.49B-$9.73B; Operating margin ~26%"
+    },
+    "price_history": [558.4, 567.9, 561.3, 571.8, 581.3, 574.7, 584.2, 593.7, 587.1, 596.6,
+                      606.1, 599.5, 609.0, 618.5, 611.9, 621.4, 630.9, 624.3, 633.8, 643.3,
+                      636.7, 646.2, 655.7, 649.1, 658.6, 668.1, 661.5, 671.0, 680.5, 610.2],
+    "sector": "Communication Services",
+    "macro_context": "Streaming wars showing signs of consolidation as smaller services struggle with profitability. Connected TV advertising market growing rapidly as linear TV audiences decline. Password sharing crackdown industry-wide following Netflix's lead. Consumer discretionary spending on entertainment holding up despite higher interest rates. Competition from Disney+, Max, Peacock, and Amazon Prime Video all accelerating their own advertising tiers."
+  },
+  "ground_truth": {
+    "price_1w_after": 634.81,
+    "price_change_pct": 4.0,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Decision to stop reporting subscriber numbers starting Q1 2025 raised transparency concerns",
+      "Q2 2025 guidance calling for operating margin of ~26% implied sequential compression from Q1's 28%",
+      "Content spending cycle increasing again in 2024-2025 as writers/actors strike resolved",
+      "International currency headwinds reducing U.S.-dollar revenue growth rate",
+      "Password-sharing-driven growth likely to be one-time boost that normalizes in 2025"
+    ],
+    "missed_signals": [
+      "9.33M net subscriber additions in Q1 was nearly 2x analyst consensus of 4.8M — massive beat",
+      "Ad-supported tier growing faster than expected, raising long-term monetization potential"
+    ]
+  }
+}

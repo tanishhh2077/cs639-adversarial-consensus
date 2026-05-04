@@ -1,0 +1,43 @@
+{
+  "scenario_id": "modified_012",
+  "company": "Advanced Micro Devices Inc.",
+  "ticker": "AMD",
+  "event_date": "2024-04-30",
+  "event_type": "earnings",
+  "modification_type": "misinformation",
+  "_modification_description": "Changed eps_yoy_growth from -23% (actual, GAAP) to +45%, while the earnings_summary correctly notes earnings pressure from restructuring and amortization. This tests how agents handle a contradiction between headline EPS growth and the narrative describing ongoing profitability challenges.",
+  "input_data": {
+    "earnings_summary": "AMD reported Q1 2024 results with mixed signals. Revenue reached $5.47 billion, up 2% year-over-year. Data Center segment revenue surged 80% YoY to $2.34 billion, driven by MI300X AI GPU sales which exceeded $1 billion in the quarter for the first time — ahead of schedule. However, Gaming segment revenue fell 48% YoY to $922 million as PC GPU market continued to normalize and Sony/Microsoft console refresh cycle completed. GAAP net income was $123 million, constrained by $725 million in acquisition-related amortization from the Xilinx deal. Non-GAAP EPS came in at $0.62, beating the $0.61 consensus. CEO Lisa Su raised full-year AI GPU revenue guidance to 'well above $3.5 billion' (from $3.5 billion previously), citing accelerating hyperscaler MI300X adoption.",
+    "key_metrics": {
+      "revenue": 5470000000,
+      "revenue_yoy_growth": 0.02,
+      "eps": 0.62,
+      "eps_yoy_growth": 0.45,
+      "_note": "MISINFORMATION: Actual GAAP EPS YoY growth was approximately -23% due to acquisition amortization charges. This figure is deliberately inflated.",
+      "gross_margin": 0.471,
+      "operating_margin": 0.019,
+      "guidance_next_quarter": "Q2 2024 revenue $5.7B (+/- $300M); Non-GAAP gross margin ~53%"
+    },
+    "price_history": [174.8, 181.3, 178.2, 185.1, 182.0, 188.9, 185.8, 192.7, 189.6, 196.5,
+                      193.4, 200.3, 197.2, 204.1, 201.0, 207.9, 204.8, 211.7, 208.6, 215.5,
+                      212.4, 219.3, 216.2, 223.1, 220.0, 226.9, 223.8, 230.7, 227.6, 164.2],
+    "sector": "Technology",
+    "macro_context": "AI chip market growing explosively with NVIDIA dominating at 80%+ share but AMD MI300X emerging as credible alternative for inference workloads. PC market recovering modestly from 2023 trough but gaming GPU demand still subdued. Data center build-out continuing with all hyperscalers expanding GPU capacity. AMD gaining data center CPU market share from Intel across server deployments."
+  },
+  "ground_truth": {
+    "price_1w_after": 148.31,
+    "price_change_pct": -9.7,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Gaming segment -48% YoY signals structural decline, not a cyclical trough",
+      "GAAP operating margin of only 1.9% means AMD is barely profitable on a reported basis",
+      "AI GPU guidance raise ('well above $3.5B') from $3.5B was seen as underwhelming vs. $4B+ expectations",
+      "AMD's MI300X adoption concentrated in Microsoft Azure — customer concentration risk",
+      "Intel's Gaudi 3 AI accelerator launch creating incremental competition in AMD's growth segment"
+    ],
+    "missed_signals": [
+      "Embedded segment showing early signs of inventory destocking completion — potential recovery catalyst",
+      "MI300X inference superiority for large language models creating faster deployment at frontier AI labs"
+    ]
+  }
+}
