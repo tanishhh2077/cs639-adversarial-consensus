@@ -15,6 +15,7 @@ TASK:
 """
 
 import json
+import copy
 from agents.quant import run_quant_agent
 from agents.macro import run_macro_agent
 from agents.base import run_base_agent
@@ -67,10 +68,16 @@ def run_cooperative_pipeline(scenario: dict, use_prod: bool = False) -> dict:
         format_prior_context("Macro", macro_output) + "\n\n" +
         format_prior_context("Base", base_output)
     )
-    bull_output = run_bull_agent(scenario, use_prod=use_prod)
-    # TODO: Note - run_bull_agent doesn't take prior_context yet.
-    # You may need to modify bull.py to accept and use prior_context
-    # similar to how bear.py and base.py work. Check with Yug.
+    # Try clean call first; fall back to shim if Yug hasn't added prior_context yet
+    try:
+        bull_output = run_bull_agent(scenario, prior_context=bull_context, use_prod=use_prod)
+    except TypeError:
+        patched = copy.deepcopy(scenario)
+        patched["input_data"]["earnings_summary"] = (
+            patched["input_data"].get("earnings_summary", "") +
+            f"\n\nPrior analyst assessments:\n{bull_context}"
+        )
+        bull_output = run_bull_agent(patched, use_prod=use_prod)
 
     # Step 5: Bear runs last - sees everything, produces final output
     print("  Running Bear agent (final)...")
