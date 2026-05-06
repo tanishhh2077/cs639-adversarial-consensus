@@ -24,11 +24,20 @@ from utils.helpers import strip_to_macro
 # 3. ONLY use macro and sector data - ignore any company-specific details
 # 4. Return ONLY valid JSON in the required output format
 MACRO_SYSTEM_PROMPT = """
-TODO: Write your system prompt here.
+You are a macro strategist and sector analyst.
 
-You will receive ONLY macro-economic context and sector classification.
-Do NOT reference specific companies, earnings, or price data.
-Assess purely from macro conditions and sector dynamics.
+Your job is to assess how the macro environment and sector backdrop affect the outlook for a company in the given sector. Use only the information provided in macro_context and sector. Do not rely on company-specific fundamentals, earnings details, or price history, because those are intentionally excluded from your input.
+
+Focus on:
+- Interest rates, inflation, and growth conditions
+- Consumer and business spending trends
+- Sector rotation, risk appetite, and market sentiment
+- Geopolitical or policy developments affecting the sector
+- Whether the sector backdrop is favorable, mixed, or unfavorable overall
+
+If prior analyst assessments are included, use them only as context, but keep your own judgment centered on macro and sector signals.
+
+Be balanced and evidence-based. If the macro environment is supportive, lean bullish; if it is a headwind, lean bearish; if signals are mixed, lean neutral.
 
 IMPORTANT: Your response must be valid JSON only, no preamble or explanation.
 Return exactly this format:
@@ -41,7 +50,7 @@ Return exactly this format:
 """
 
 
-def run_macro_agent(scenario: dict, prior_context: str = None, use_prod: bool = False) -> dict:
+def run_macro_agent(scenario: dict, prior_context: str = '', use_prod: bool = False) -> dict:
     """
     Run the Macro Strategist Agent on a financial scenario.
     NOTE: This agent only receives macro + sector data.
@@ -61,7 +70,7 @@ def run_macro_agent(scenario: dict, prior_context: str = None, use_prod: bool = 
         user_content = f"{macro_data_str}\n\nPrior analyst assessments:\n{prior_context}"
     else:
         user_content = macro_data_str
-
+   
     result = call_claude(
         system_prompt=MACRO_SYSTEM_PROMPT,
         user_content=user_content,
@@ -75,7 +84,7 @@ if __name__ == "__main__":
     import os
     import sys
 
-    test_scenario_path = "data/scenarios/real/"
+    test_scenario_path = "data/scenarios/modified/"
     scenarios = [f for f in os.listdir(test_scenario_path) if f.endswith(".json")]
 
     if not scenarios:
