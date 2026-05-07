@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_010",
+  "company": "Netflix, Inc.",
+  "ticker": "NFLX",
+  "event_date": "2024-04-18",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Netflix reported Q1 2024 earnings on April 18, 2024, delivering a massive subscriber beat and announcing that it would stop reporting quarterly subscriber numbers starting Q1 2025\u2014a move that initially caused brief uncertainty but was quickly accepted as a maturation signal. Net new subscribers of 9.33 million crushed the 4.84 million consensus, bringing global paid memberships to 269.6 million. Revenue grew 15% YoY to $9.37 billion, beating the $9.28 billion estimate. EPS of $5.28 beat the $4.52 consensus.\n\nThe password-sharing crackdown\u2014which many analysts feared would cause subscriber churn\u2014had proven highly effective, converting password-sharers into paid members at a rate that far exceeded expectations. The ad-supported tier reached 40 million monthly active users globally, up from 23 million at end of 2023, validating the dual monetization strategy. Operating margin expanded to 28.1% from 21.0% a year earlier. Management guided Q2 revenue to $9.49 billion (above the $9.28 billion consensus) and Q2 operating income margin of 26.6%.",
+    "key_metrics": {
+      "revenue": 9370000000,
+      "revenue_yoy_growth": 0.15,
+      "eps_gaap": 5.28,
+      "operating_income": 2633000000,
+      "operating_margin": 0.281,
+      "paid_memberships_millions": 269.6,
+      "net_new_subscribers_millions": 9.33,
+      "ad_supported_mau_millions": 40,
+      "q2_guidance_revenue": 9490000000,
+      "q2_guidance_op_margin": 0.266,
+      "fy2024_op_margin_guidance": 0.25,
+      "consensus_estimate_revenue": 9280000000,
+      "consensus_estimate_eps": 4.52,
+      "consensus_estimate_net_adds": 4.84,
+      "arm_revenue_per_membership": 17.31
+    },
+    "price_history": [
+      597.2,
+      604.5,
+      611.8,
+      607.3,
+      614.7,
+      621.4,
+      617.9,
+      625.2,
+      632.6,
+      628.1,
+      635.8,
+      643.2,
+      639.5,
+      647.1,
+      654.3,
+      650.8,
+      658.4,
+      665.7,
+      661.2,
+      669.1,
+      676.5,
+      672.3,
+      680.1,
+      687.8,
+      683.4,
+      691.2,
+      699.0,
+      694.5,
+      703.2,
+      614.38
+    ],
+    "sector": "Communication Services / Streaming",
+    "macro_context": "The streaming industry was undergoing consolidation and rationalization after the 2020-2022 subscriber boom and bust. Disney+, Max, and Peacock were all cutting costs and exploring ad-supported tiers. The Hollywood writers' and actors' strikes (July\u2013November 2023) had created a content slate gap in Q1 2024 that Netflix navigated with its larger international content library. Linear TV viewership continued to decline. The macroeconomic environment was stable, supporting consumer subscription spending."
+  },
+  "ground_truth": {
+    "price_1w_after": 638.23,
+    "price_change_pct": 3.88,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Decision to stop reporting quarterly subscribers creates opacity that may raise governance concerns",
+      "Password sharing crackdown is a one-time subscriber conversion; underlying growth rate may slow",
+      "Content spending of $17B+ annually is a structural cost that limits free cash flow expansion",
+      "Ad-supported tier ARPU is lower than standard plan; mix shift could depress revenue per user",
+      "Competition from YouTube (free, mobile-native) and TikTok for entertainment time is structural",
+      "Live sports rights costs are rising \u2014 NFL, NBA deals may significantly raise content budget",
+      "International markets have lower pricing power; FX headwinds from strong dollar",
+      "Churn risk increases as price increases compound over multiple years"
+    ],
+    "missed_signals": [
+      "Live sports strategy (NFL Christmas Day games, WWE Raw) would be announced and accelerate ad revenue",
+      "ARM trajectory would significantly exceed $17.31 as users upgraded to higher-priced plans"
+    ]
+  }
+}

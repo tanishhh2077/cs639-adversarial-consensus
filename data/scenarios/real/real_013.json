@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_013",
+  "company": "Palantir Technologies Inc.",
+  "ticker": "PLTR",
+  "event_date": "2024-11-04",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Palantir reported Q3 2024 earnings on November 4, 2024, beating estimates on revenue and EPS while dramatically raising full-year guidance. Revenue grew 30% YoY to $725.5 million, beating the $700.8 million estimate\u2014the highest YoY growth rate since 2022 and a clear inflection from the 13\u201317% range of 2022\u20132023. US commercial revenue grew 54% YoY to $179 million, driven almost entirely by the AIP (Artificial Intelligence Platform) product, which was generating rapid enterprise adoption through 'boot camps' where potential customers built AI applications in days rather than months.\n\nEPS of $0.10 (non-GAAP) beat the $0.09 estimate. Management raised FY2024 revenue guidance to $2.805\u2013$2.809 billion from the prior $2.742\u2013$2750 billion. CEO Alex Karp emphasized that the company had 'broken from the pack' and that US commercial growth would continue accelerating. Palantir was added to the S&P 500 index on September 23, 2024\u2014just weeks before this earnings report\u2014creating sustained institutional buying pressure from index-tracking funds.",
+    "key_metrics": {
+      "revenue": 725500000,
+      "revenue_yoy_growth": 0.3,
+      "eps_non_gaap": 0.1,
+      "us_commercial_revenue": 179000000,
+      "us_commercial_revenue_growth": 0.54,
+      "us_government_revenue": 320000000,
+      "us_government_revenue_growth": 0.4,
+      "international_commercial_revenue": 113000000,
+      "international_government_revenue": 113500000,
+      "fy2024_guidance_revenue": 2807000000,
+      "remaining_deal_value_bn": 4.5,
+      "customer_count_us_commercial": 321,
+      "consensus_estimate_revenue": 700800000,
+      "consensus_estimate_eps": 0.09
+    },
+    "price_history": [
+      28.2,
+      29.1,
+      30.4,
+      29.8,
+      31.2,
+      32.5,
+      31.7,
+      33.1,
+      34.4,
+      33.6,
+      35.0,
+      36.3,
+      35.5,
+      36.8,
+      38.2,
+      37.4,
+      38.7,
+      40.1,
+      39.3,
+      40.6,
+      42.0,
+      41.2,
+      42.5,
+      43.9,
+      43.1,
+      44.4,
+      45.8,
+      45.0,
+      46.3,
+      41.02
+    ],
+    "sector": "Technology / Data Analytics / Defense",
+    "macro_context": "The US presidential election (Trump won on November 5, 2024) was the day after earnings, creating market uncertainty. Defense spending was expected to increase under a new administration. Government AI spending was accelerating with the DoD's CDAO (Chief Digital and AI Office) driving enterprise AI procurement. S&P 500 inclusion had already driven significant passive fund inflows. The broader market was in a risk-on mode driven by AI optimism and rate cut expectations."
+  },
+  "ground_truth": {
+    "price_1w_after": 54.1,
+    "price_change_pct": 31.89,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Revenue base is still small at $725M quarterly \u2014 30% growth from small base is less impressive than it appears",
+      "Government revenue concentration (60%+) means budget cuts or geopolitical shifts are single-point risks",
+      "US commercial customer count of 321 is low relative to market size \u2014 scaling beyond early adopters is unproven",
+      "Stock-based compensation remains high (~$120M/Q) \u2014 GAAP profitability overstates cash generation quality",
+      "International business growing slowly despite years of investment \u2014 geographic expansion has stalled",
+      "AIP 'boot camp' model requires intensive hand-holding \u2014 not a scalable go-to-market for mass-market",
+      "CEO Alex Karp's unusual public persona and statements create unpredictability risk for institutional investors",
+      "Valuation at 20x+ forward revenue requires sustained hyper-growth with no major execution stumbles"
+    ],
+    "missed_signals": [
+      "Trump election victory (next day) would accelerate DOGE-driven government efficiency software demand \u2014 PLTR was best positioned",
+      "AIP platform would be adopted by major defense contractors as a standard, creating ecosystem lock-in effects"
+    ]
+  }
+}

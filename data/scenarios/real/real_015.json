@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_015",
+  "company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "event_date": "2024-04-25",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Microsoft reported Q3 FY2024 earnings on April 25, 2024, beating estimates on revenue and EPS driven by significant Azure cloud reacceleration and early Copilot monetization. Revenue grew 17% YoY to $61.9 billion, above the $60.9 billion estimate. EPS of $2.94 beat the $2.82 estimate. Azure and cloud services revenue grew 31% YoY\u2014a meaningful acceleration from 28% in Q2 and 26% in Q1\u2014with management noting that AI services contributed approximately 7 percentage points to Azure growth, up from 6 points in Q2.\n\nThe Intelligent Cloud segment (containing Azure) generated revenue of $26.7 billion, above the $26.3 billion estimate. Copilot for Microsoft 365 (priced at $30/user/month) was gaining enterprise traction, though the financial contribution remained modest relative to total Microsoft 365 revenue. LinkedIn revenue grew 10% YoY. CEO Satya Nadella highlighted that Microsoft's partnership with OpenAI was creating 'strategic moat' in enterprise AI. Management guided Q4 FY2024 revenue to $63.5\u2013$64.5 billion, above the $63.4 billion consensus, and highlighted continued AI-driven Azure growth.",
+    "key_metrics": {
+      "revenue": 61858000000,
+      "revenue_yoy_growth": 0.17,
+      "eps_gaap": 2.94,
+      "intelligent_cloud_revenue": 26710000000,
+      "azure_growth_yoy": 0.31,
+      "azure_ai_contribution_pts": 7,
+      "productivity_biz_revenue": 19570000000,
+      "more_personal_computing_revenue": 15580000000,
+      "operating_income": 27580000000,
+      "operating_margin": 0.446,
+      "q4_guidance_revenue_low": 63500000000,
+      "q4_guidance_revenue_high": 64500000000,
+      "consensus_estimate_revenue": 60900000000,
+      "consensus_estimate_eps": 2.82
+    },
+    "price_history": [
+      406.32,
+      410.5,
+      415.2,
+      411.8,
+      416.4,
+      420.1,
+      417.3,
+      422.0,
+      425.6,
+      422.2,
+      427.0,
+      430.8,
+      427.4,
+      432.2,
+      436.1,
+      432.7,
+      437.5,
+      441.3,
+      437.9,
+      442.7,
+      446.5,
+      443.1,
+      448.0,
+      451.8,
+      448.4,
+      453.2,
+      457.1,
+      453.7,
+      458.6,
+      399.04
+    ],
+    "sector": "Technology / Cloud / Enterprise Software",
+    "macro_context": "Enterprise AI adoption was accelerating in Q2 2024 with Copilot for M365 widely deployed in Fortune 500 pilot programs. Amazon Web Services and Google Cloud had both confirmed cloud reacceleration in their own earnings reports. The broader software sector was bifurcating between AI beneficiaries and laggards. Interest rates remained high but the Fed signaled cuts were coming. Microsoft's $10B OpenAI investment was providing early commercial returns through Azure OpenAI service with 65% of Fortune 500 using it."
+  },
+  "ground_truth": {
+    "price_1w_after": 415.57,
+    "price_change_pct": 4.14,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Azure AI contribution (7pts) has a ceiling as AI training runs complete and inference workloads scale more slowly",
+      "Copilot for M365 at $30/user/month faces enterprise ROI scrutiny \u2014 many pilots not converting to full rollouts",
+      "Activision integration ($68.7B acquisition) is dilutive to margins and adding execution complexity",
+      "Azure market share gains against AWS are modest; AWS still has 32% market share vs Azure's 23%",
+      "Teams standalone competition from Slack (Salesforce) and Zoom \u2014 messaging market commoditizing",
+      "EU regulatory pressure on Teams bundling (unbundling ordered in EU) removes a competitive advantage",
+      "China exposure through Xbox and LinkedIn creates geopolitical risk",
+      "FTC OpenAI partnership scrutiny could create restrictive oversight requirements"
+    ],
+    "missed_signals": [
+      "Azure AI growth contribution would accelerate to 12+ points by Q1 FY2025 \u2014 consensus was modeling flat",
+      "Copilot Studio enterprise adoption was tracking significantly ahead of internal targets"
+    ]
+  }
+}

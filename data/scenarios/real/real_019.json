@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_019",
+  "company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "event_date": "2025-01-29",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Tesla reported Q4 2024 earnings on January 29, 2025, with revenue of $25.71 billion missing the $27.42 billion estimate, and EPS of $0.73 missing the $0.76 estimate. Full-year 2024 vehicle deliveries of 1.79 million missed the 1.8 million target\u2014 the first annual delivery decline in Tesla's history. Automotive revenue declined 8% YoY on average selling price pressure from continued price cuts. Gross margin of 16.3% (automotive) was below the 17.2% estimate, reflecting ongoing pricing actions to maintain volume.\n\nThe Energy Generation and Storage business was the bright spot, with $3.06 billion in revenue, up 113% YoY. Management provided optimistic FY2025 delivery guidance of 'modest growth' but declined to provide specific numbers. CEO Elon Musk highlighted the upcoming Cybercab (robotaxi) product reveal scheduled for 2025 and discussed the FSD (Full Self-Driving) supervised progress. Musk's new role as head of the Department of Government Efficiency (DOGE) under President Trump was raising questions about management attention and potential policy conflicts.",
+    "key_metrics": {
+      "revenue": 25707000000,
+      "revenue_yoy_growth": 0.02,
+      "eps_gaap": 0.73,
+      "gross_margin_automotive": 0.163,
+      "gross_margin_total": 0.167,
+      "vehicle_deliveries_q4": 495570,
+      "vehicle_deliveries_fy2024": 1789226,
+      "energy_revenue": 3061000000,
+      "energy_revenue_growth": 1.13,
+      "services_revenue": 2790000000,
+      "cash_and_investments": 36560000000,
+      "fy2025_delivery_guidance": "modest growth",
+      "consensus_estimate_revenue": 27420000000,
+      "consensus_estimate_eps": 0.76
+    },
+    "price_history": [
+      342.0,
+      352.4,
+      362.8,
+      355.2,
+      365.6,
+      376.0,
+      368.4,
+      378.9,
+      389.3,
+      381.7,
+      392.1,
+      402.6,
+      395.0,
+      405.4,
+      415.9,
+      408.2,
+      418.7,
+      429.2,
+      421.5,
+      432.0,
+      442.5,
+      434.8,
+      421.06,
+      409.3,
+      397.6,
+      386.0,
+      374.4,
+      362.8,
+      351.2,
+      403.84
+    ],
+    "sector": "Consumer Discretionary / Electric Vehicles",
+    "macro_context": "Tesla stock had surged ~80% post-election (October\u2013December 2024) on expectations that Musk's DOGE role would benefit Tesla through favorable EV policy, reduced regulation, and FSD regulatory approvals. However, the regulatory tailwind was complicated by the EV tax credit elimination (Trump's executive order) that reduced demand for all EVs including Tesla. BYD had definitively surpassed Tesla in global EV deliveries in 2024. The Model Y refresh was ramping at all factories in early 2025 but causing production disruptions."
+  },
+  "ground_truth": {
+    "price_1w_after": 362.55,
+    "price_change_pct": -10.22,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "First-ever annual delivery decline signals fundamental demand saturation at current price points",
+      "EV tax credit elimination removes $7,500 subsidy that Tesla had been implicitly factoring into pricing",
+      "Elon Musk's DOGE role creates management distraction and political brand toxicity in blue states",
+      "FSD unsupervised still not available in any jurisdiction after years of promises",
+      "Cybercab (robotaxi) has no regulatory path to deployment \u2014 requires autonomous driving approval",
+      "BYD's global expansion (Europe, Southeast Asia) will intensify price competition in all markets",
+      "Automotive gross margin below 17% raises question about whether EVs are structurally profitable at Tesla's scale",
+      "Energy business (Megapack) is growing but has much lower margins than auto and can't compensate"
+    ],
+    "missed_signals": [
+      "Model Y refresh would ramp faster than expected, driving strong Q1 2025 orders",
+      "Musk's political capital would be used to fast-track FSD regulatory approval \u2014 timeline was closer than disclosed"
+    ]
+  }
+}

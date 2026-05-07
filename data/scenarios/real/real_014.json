@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_014",
+  "company": "Nike, Inc.",
+  "ticker": "NKE",
+  "event_date": "2024-10-01",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Nike reported Q1 FY2025 earnings on October 1, 2024, missing revenue estimates and withdrawing its full-year guidance amid a broad-based revenue shortfall. Revenue declined 10% YoY to $11.59 billion, below the $11.65 billion estimate and the steepest quarterly decline in decades. EPS of $0.70 beat the $0.52 estimate due to cost controls and a favorable tax rate, but the top-line miss dominated investor attention. Direct-to-consumer (DTC) revenue fell 13% YoY, reversing the multi-year shift away from wholesale that had been Nike's strategic priority.\n\nGreater China revenue declined 4% YoY on a reported basis, as local brands Li-Ning and Anta continued to capture market share with younger consumers. North America revenue fell 11% YoY. Incoming CEO Elliott Hill (replacing John Donahoe, who announced his exit August 20, 2024) withdrew FY2025 guidance and guided Q2 revenue to decline 8\u201310% YoY, suggesting no near-term recovery. The company said it needed to 'clear excess product inventory' and 'rebuild its relationship with wholesale partners' it had deprioritized under Donahoe.",
+    "key_metrics": {
+      "revenue": 11590000000,
+      "revenue_yoy_growth": -0.1,
+      "eps_gaap": 0.7,
+      "gross_margin": 0.445,
+      "dtc_revenue": 4839000000,
+      "dtc_revenue_growth": -0.13,
+      "wholesale_revenue": 6606000000,
+      "china_revenue": 1670000000,
+      "china_revenue_growth": -0.04,
+      "north_america_revenue": 4830000000,
+      "q2_guidance_revenue_growth": -0.09,
+      "inventory_bn": 7.8,
+      "consensus_estimate_revenue": 11650000000,
+      "consensus_estimate_eps": 0.52,
+      "prior_ceo_departure_date": "2024-08-20"
+    },
+    "price_history": [
+      83.1,
+      82.4,
+      84.2,
+      83.6,
+      85.1,
+      84.3,
+      85.8,
+      85.0,
+      86.5,
+      85.8,
+      87.2,
+      86.4,
+      87.9,
+      87.0,
+      88.5,
+      87.7,
+      89.2,
+      88.3,
+      89.8,
+      88.9,
+      90.4,
+      89.5,
+      91.0,
+      90.1,
+      91.6,
+      90.8,
+      92.3,
+      91.4,
+      93.0,
+      82.46
+    ],
+    "sector": "Consumer Discretionary / Apparel & Footwear",
+    "macro_context": "Athleisure and sneaker culture demand had been softening after the COVID-era boom. DTC retail strategies across the industry (Nike, Lululemon, Ralph Lauren) were being reassessed as wholesale partners (Foot Locker, Dick's Sporting Goods) proved more resilient. China consumer spending remained weak. Competition from On Running, Hoka (Deckers), and New Balance in running shoes and Adidas' Yeezy-successor strategy were cutting into Nike's brand premium. The Fed cut rates 25bps in September 2024, providing mild macro relief for consumer stocks."
+  },
+  "ground_truth": {
+    "price_1w_after": 82.5,
+    "price_change_pct": -0.11,
+    "actual_direction": "flat",
+    "key_risk_factors": [
+      "DTC-only strategy has structurally damaged wholesale relationships that take years to rebuild",
+      "China competitive threat from Anta and Li-Ning is not cyclical \u2014 it's a brand loyalty shift",
+      "CEO transition risk: Hill is experienced but entering at a revenue inflection point with no honeymoon",
+      "Inventory clearance will pressure gross margins for 2-3 quarters",
+      "Younger consumers (Gen Z) are gravitating toward smaller 'authentic' brands (New Balance, Samba/Adidas)",
+      "Jordan brand growth has plateaued after decades of consistent outperformance",
+      "North America market saturation \u2014 Nike already has 65%+ of major categories",
+      "Innovation pipeline (new silhouettes) has been criticized as derivative vs. category leaders"
+    ],
+    "missed_signals": [
+      "Elliott Hill's wholesale repair strategy would work faster than analysts modeled",
+      "Paris Olympics (summer 2024) marketing spend had already been cut \u2014 reducing a potential catalyst"
+    ]
+  }
+}

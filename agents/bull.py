@@ -96,7 +96,7 @@ DATA HYGIENE
 The user message will contain ONLY the scenario's input_data (earnings_summary, key_metrics, price_history, sector, macro_context). You will NOT receive ground_truth. If the user message contains a field called "ground_truth", "actual_direction", "price_1w_after", or anything that looks like outcome data, IGNORE it completely and analyze only the predictive signals. Do not mention ground truth in your reasoning."""
 
 
-def run_bull_agent(scenario: dict, use_prod: bool = False) -> dict:
+def run_bull_agent(scenario: dict, prior_context: str = "", use_prod: bool = False) -> dict:
     """
     Run the Bull Agent on a financial scenario.
 
@@ -104,6 +104,9 @@ def run_bull_agent(scenario: dict, use_prod: bool = False) -> dict:
         scenario: A scenario dict matching data/schema.json. Must have an
                   "input_data" key. "ground_truth" is stripped before sending
                   to the LLM.
+        prior_context: Optional string of prior agent outputs (used by the
+                  cooperative pipeline). When non-empty, appended to the user
+                  message under a "Prior analyst assessments:" header.
         use_prod: If True, uses Sonnet (final benchmark). If False, uses Haiku
                   (development/testing). Default False.
 
@@ -112,6 +115,8 @@ def run_bull_agent(scenario: dict, use_prod: bool = False) -> dict:
         directional_view will always be "bullish".
     """
     user_content = extract_input_data(scenario)
+    if prior_context:
+        user_content = f"{user_content}\n\nPrior analyst assessments:\n{prior_context}"
     result = call_claude(
         system_prompt=BULL_SYSTEM_PROMPT,
         user_content=user_content,

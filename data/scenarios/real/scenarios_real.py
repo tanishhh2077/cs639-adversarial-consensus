@@ -1692,7 +1692,7 @@ SCENARIOS = [
             "google_cloud_yoy_growth": 0.35,
             "google_cloud_op_margin": 0.17,
             "youtube_ad_revenue": 8921000000,
-            "operating_income": 28dc0000000,
+            "operating_income": 28521000000,
             "free_cash_flow_q3": 17626000000,
             "doj_antitrust_ruling_date": "2024-08-05",
             "apple_search_agreement_value_annual_bn": 18,

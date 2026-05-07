@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_024",
+  "company": "The Walt Disney Company",
+  "ticker": "DIS",
+  "event_date": "2024-08-07",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Disney reported Q3 FY2024 earnings on August 7, 2024, with mixed results: the combined streaming segment (Disney+/Hulu/ESPN+) achieved its first-ever quarterly profit, but theme parks weakness and ongoing linear TV decline offset the positive streaming milestone. Total revenue of $23.16 billion missed the $23.07 billion estimate slightly. EPS of $1.39 (adjusted) beat the $1.19 estimate.\n\nThe combined streaming segment generated operating income of $47 million\u2014its first profitable quarter\u2014versus a $512 million operating loss a year earlier. Disney+ subscribers rose slightly to 118.3 million. However, Experiences (theme parks, resorts, cruise line) operating income declined 3% YoY to $2.22 billion as domestic parks saw softening consumer demand and international parks faced FX headwinds. Linear networks (ABC, ESPN, cable channels) operating income fell 13% YoY as cord-cutting accelerated. CEO Bob Iger announced a joint venture to combine ESPN with Fox Sports and Warner Bros. Discovery Sports in a new streaming bundle, and reaffirmed plans to take full ownership of Hulu from Comcast by year-end for ~$8.6 billion.",
+    "key_metrics": {
+      "revenue": 23155000000,
+      "revenue_yoy_growth": 0.04,
+      "eps_adjusted": 1.39,
+      "streaming_combined_op_income": 47000000,
+      "disney_plus_subscribers_millions": 118.3,
+      "disney_plus_arpu": 7.74,
+      "experiences_op_income": 2220000000,
+      "experiences_op_income_growth": -0.03,
+      "linear_networks_op_income_growth": -0.13,
+      "sports_jv_partners": "Fox, Warner Bros Discovery",
+      "hulu_acquisition_cost_bn": 8.61,
+      "consensus_estimate_revenue": 23070000000,
+      "consensus_estimate_eps": 1.19,
+      "content_spend_fy2024_bn": 25
+    },
+    "price_history": [
+      99.5,
+      100.3,
+      101.4,
+      100.1,
+      102.2,
+      103.4,
+      102.1,
+      103.3,
+      104.5,
+      103.2,
+      104.4,
+      105.7,
+      104.4,
+      105.6,
+      106.8,
+      105.5,
+      106.8,
+      108.0,
+      106.7,
+      107.9,
+      109.2,
+      107.9,
+      109.1,
+      110.4,
+      109.1,
+      110.3,
+      111.6,
+      110.3,
+      111.6,
+      91.16
+    ],
+    "sector": "Communication Services / Entertainment",
+    "macro_context": "The streaming wars were entering a consolidation phase with Disney, Netflix, and Amazon emerging as likely long-term winners. Cord-cutting was accelerating: traditional pay-TV lost 7.7 million subscribers in 2023. Theme park demand had plateaued after the post-COVID surge; consumer spending on experiences was moderating. Disney's proxy fight with activist investor Nelson Peltz (Trian Fund) had concluded with Disney prevailing in April 2024, reducing near-term corporate governance uncertainty. The Q3 results coincided with a broader market selloff following weak economic data."
+  },
+  "ground_truth": {
+    "price_1w_after": 90.59,
+    "price_change_pct": -0.63,
+    "actual_direction": "flat",
+    "key_risk_factors": [
+      "Parks operating income decline is worrisome \u2014 the segment generates ~60% of Disney's total operating income",
+      "Linear TV is structurally declining with no floor in sight \u2014 ESPN carriage fees will peak then fall",
+      "Streaming profitability at $47M is fragile \u2014 one content write-down or subscriber miss reverses it",
+      "Hulu acquisition at $8.61B adds $8.6B in debt to an already leveraged balance sheet",
+      "Disney+ subscriber growth is stalling in the US; international subscribers have much lower ARPU",
+      "Sports JV (ESPN+/Fox/WBD) faces significant antitrust scrutiny and complex content rights negotiations",
+      "Content spending of $25B+/year limits free cash flow despite revenue growth",
+      "CEO Bob Iger succession planning remains unresolved \u2014 governance uncertainty for long-term investors"
+    ],
+    "missed_signals": [
+      "India market (Star/Hotstar) subscriber loss from cricket rights loss was larger than disclosed",
+      "ESPN's eventual standalone streaming launch would require significant marketing spend to acquire subscribers"
+    ]
+  }
+}

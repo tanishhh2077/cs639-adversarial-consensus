@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_025",
+  "company": "Novo Nordisk A/S",
+  "ticker": "NVO",
+  "event_date": "2025-02-05",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Novo Nordisk reported FY2024 full-year results on February 5, 2025, dramatically missing expectations and slashing 2025 guidance\u2014triggering the worst single-day decline in the company's history, with shares falling approximately 20%. Revenue grew 25% to DKK 290.4 billion (~$40B USD), but missed the DKK 295 billion estimate. More critically, management guided FY2025 revenue growth to just 16\u201324%, far below the 30%+ consensus expectation. Operating profit grew 26% to DKK 121.4 billion.\n\nThe GLP-1 segment (Ozempic, Wegovy, Victoza) remained the growth engine but showed signs of deceleration. Wegovy (obesity) US sales grew 86% in 2024 but the Q4 growth rate was slowing. A Phase 3 trial of the next-generation oral semaglutide (CagriSema) for obesity showed weight loss of 22.7%\u2014better than existing options but below the 25%+ market expectation. Compounding pharmacies had provided cheaper 'alternatives' to Ozempic and Wegovy during 2024, capturing patients who would otherwise have been Novo Nordisk customers. Eli Lilly's tirzepatide (Zepbound) was gaining significant market share with superior clinical outcomes in head-to-head data.",
+    "key_metrics": {
+      "revenue_dkk_bn": 290.4,
+      "revenue_usd_bn": 40.2,
+      "revenue_yoy_growth": 0.25,
+      "operating_profit_dkk_bn": 121.4,
+      "operating_profit_growth": 0.26,
+      "wegovy_sales_growth_fy2024": 0.86,
+      "ozempic_sales_growth_fy2024": 0.23,
+      "fy2025_guidance_revenue_growth_low": 0.16,
+      "fy2025_guidance_revenue_growth_high": 0.24,
+      "cagriseema_weight_loss_pct": 0.227,
+      "market_expected_cagriseema_pct": 0.25,
+      "consensus_estimate_revenue_dkk_bn": 295,
+      "consensus_estimate_fy2025_growth": 0.31,
+      "compound_pharmacy_market_share_est_pct": 0.35
+    },
+    "price_history": [
+      104.2,
+      106.1,
+      108.0,
+      106.5,
+      108.8,
+      110.7,
+      109.2,
+      111.1,
+      113.0,
+      111.5,
+      113.4,
+      115.3,
+      113.8,
+      115.7,
+      117.6,
+      116.1,
+      118.0,
+      119.9,
+      118.4,
+      120.3,
+      122.2,
+      120.7,
+      122.6,
+      124.5,
+      123.0,
+      124.9,
+      126.8,
+      125.3,
+      127.2,
+      115.68
+    ],
+    "sector": "Healthcare / Pharmaceuticals / Biotech",
+    "macro_context": "The GLP-1 obesity drug market was experiencing rapid growth but also intensifying competition. Eli Lilly's Zepbound had FDA approval and was outperforming Wegovy in head-to-head weight loss trials. The FDA had classified semaglutide as in shortage, enabling compounding pharmacies to manufacture cheaper versions. The Trump administration was scrutinizing drug pricing, including potential Medicare/Medicaid GLP-1 coverage expansion (Biden had proposed this). Novo Nordisk's stock had nearly tripled from 2022 to mid-2024 but declined 30%+ from its peak as competitive fears emerged. The company was investing heavily in manufacturing capacity to support 5+ years of projected demand."
+  },
+  "ground_truth": {
+    "price_1w_after": 79.2,
+    "price_change_pct": -31.54,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "CagriSema trial missed market expectation \u2014 next-gen drug is not the decisive step-up over Lilly's tirzepatide",
+      "Eli Lilly's tirzepatide showing superior weight loss creates genuine competitive threat to Ozempic/Wegovy franchise",
+      "Compounding pharmacy competition removed 30-35% of potential US market volume in 2024",
+      "2025 guidance cut to 16-24% implies the growth rate is half of what consensus expected",
+      "Oral GLP-1 (OIC) failed to show non-inferiority to injectable \u2014 pipeline disappointment",
+      "Manufacturing constraints limiting ability to scale supply faster than competition",
+      "Medicare/Medicaid GLP-1 coverage expansion would benefit all competitors equally, not just NVO",
+      "Danish company exposed to currency headwinds from DKK/USD fluctuations on US revenue",
+      "Patent expiration timeline for semaglutide creates long-term biosimilar entry risk"
+    ],
+    "missed_signals": [
+      "FDA removal of semaglutide from shortage list (March 2025) would shut down compounding pharmacies, recapturing lost patients",
+      "Novo's retatrutide (triple agonist) pipeline data was stronger than disclosed \u2014 not fully valued in guidance"
+    ]
+  }
+}

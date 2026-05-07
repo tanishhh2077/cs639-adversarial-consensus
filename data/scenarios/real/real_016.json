@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_016",
+  "company": "Eli Lilly and Company",
+  "ticker": "LLY",
+  "event_date": "2024-04-30",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Eli Lilly reported Q1 2024 earnings on April 30, 2024, beating estimates on revenue and EPS and raising full-year guidance, driven by extraordinary demand for its GLP-1 receptor agonist drugs Mounjaro (diabetes) and Zepbound (obesity). Revenue grew 26% YoY to $8.77 billion, beating the $8.68 billion estimate. EPS of $2.58 beat the $2.46 estimate. Mounjaro revenue of $1.81 billion beat the $1.77 billion estimate and continued its exceptional ramp since launch. Zepbound, launched in November 2023 for obesity, generated $517 million\u2014its first full quarter\u2014exceeding the $467 million estimate.\n\nManagement raised FY2024 guidance: revenue to $42.4\u2013$43.6 billion (from $40.4\u2013$41.6 billion) and EPS to $13.50\u2013$14.00 (from $12.20\u2013$12.70). The guidance raise was remarkable in scale, with the midpoint rising $1.2 billion\u2014a 3% raise in a single quarter. CEO David Ricks cited 'exceptional demand' for both products and noted that manufacturing capacity expansion was the primary constraint on revenue growth, not market demand. Lilly had committed to $9B+ in new manufacturing capacity (US and international) to meet projected multi-year demand.",
+    "key_metrics": {
+      "revenue": 8770000000,
+      "revenue_yoy_growth": 0.26,
+      "eps_gaap": 2.58,
+      "mounjaro_revenue": 1810000000,
+      "zepbound_revenue": 517000000,
+      "trulicity_revenue": 1468000000,
+      "gross_margin": 0.795,
+      "operating_margin": 0.311,
+      "fy2024_guidance_revenue_low": 42400000000,
+      "fy2024_guidance_revenue_high": 43600000000,
+      "fy2024_guidance_eps_low": 13.5,
+      "fy2024_guidance_eps_high": 14.0,
+      "consensus_estimate_revenue": 8680000000,
+      "consensus_estimate_eps": 2.46,
+      "manufacturing_capex_committed_bn": 9
+    },
+    "price_history": [
+      739.4,
+      748.2,
+      756.8,
+      751.1,
+      759.8,
+      768.4,
+      763.6,
+      772.3,
+      781.0,
+      775.5,
+      784.2,
+      792.9,
+      788.1,
+      796.8,
+      805.6,
+      800.7,
+      809.5,
+      818.3,
+      813.4,
+      822.2,
+      831.1,
+      826.2,
+      835.0,
+      843.9,
+      838.9,
+      847.8,
+      856.7,
+      851.7,
+      860.6,
+      768.57
+    ],
+    "sector": "Healthcare / Pharmaceuticals",
+    "macro_context": "The GLP-1 market was in an early-stage boom following unprecedented weight loss clinical data for Zepbound/Wegovy. Novo Nordisk (Ozempic/Wegovy) was the other major participant. Insurance coverage for obesity drugs was expanding rapidly. The FDA had approved Zepbound in November 2023 and demand was far outstripping supply. US healthcare spending was under political scrutiny but GLP-1s were gaining bipartisan support given obesity epidemic scale. Interest rates were high but pharmaceutical stocks were seen as defensive."
+  },
+  "ground_truth": {
+    "price_1w_after": 780.0,
+    "price_change_pct": 1.49,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Manufacturing supply is the binding constraint \u2014 shortages could limit revenue and create patient access issues",
+      "Trulicity (older GLP-1) declining as doctors switch patients to Mounjaro \u2014 internal cannibalization",
+      "Novo Nordisk Wegovy and semaglutide competition is intensifying across all GLP-1 indications",
+      "Price negotiation risk: Medicare Drug Negotiation provisions could limit pricing power post-2027",
+      "Reimbursement coverage varies widely \u2014 lack of universal insurance coverage limits total addressable market",
+      "Long-term safety profile of GLP-1s at scale is still being established \u2014 regulatory/liability risk",
+      "Oral GLP-1 pills in development by multiple competitors could disrupt injectable market",
+      "Valuation at 50x+ forward earnings requires sustained multi-year hypergrowth execution"
+    ],
+    "missed_signals": [
+      "Donanemab (Alzheimer's) FDA approval in July 2024 opened a second blockbuster revenue stream",
+      "GLP-1 cardiovascular benefit data (SURMOUNT-MMO trial) would dramatically expand prescribing"
+    ]
+  }
+}

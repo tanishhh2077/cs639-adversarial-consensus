@@ -1,0 +1,83 @@
+{
+  "scenario_id": "real_003",
+  "company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "event_date": "2024-04-23",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Tesla reported Q1 2024 earnings on April 23, 2024, missing Wall Street estimates on both revenue and earnings per share. Total revenue of $21.30 billion declined 9% year-over-year\u2014the steepest decline since 2012\u2014and missed the $22.15 billion consensus. Adjusted EPS of $0.45 missed the $0.51 consensus. Automotive revenue fell 13% YoY to $17.38 billion as deliveries of 386,810 vehicles came in below expectations. Gross margin continued to compress to 17.4%, down 199 basis points YoY, as price cuts across the model lineup weighed heavily on unit economics.\n\nOperating income collapsed 56% YoY to $1.17 billion, representing a 5.5% margin. Free cash flow turned sharply negative at -$2.53 billion due to AI infrastructure capex of $1.0 billion and an inventory build of $2.7 billion. Management reiterated weak guidance, noting that 'volume growth rate may be notably lower than the rate achieved in 2023.' However, CEO Elon Musk's comment during the earnings call that Tesla would accelerate the timeline for lower-cost vehicle models to mid-2025 caused a sharp ~13% after-hours reversal, briefly obscuring the fundamental deterioration.",
+    "key_metrics": {
+      "revenue": 21301000000,
+      "revenue_yoy_growth": -0.09,
+      "eps_gaap": 0.34,
+      "eps_non_gaap": 0.45,
+      "gross_margin_gaap": 0.174,
+      "operating_income": 1171000000,
+      "operating_margin": 0.055,
+      "vehicle_deliveries": 386810,
+      "automotive_revenue": 17378000000,
+      "energy_revenue": 1635000000,
+      "free_cash_flow": -2531000000,
+      "cash_and_investments": 26863000000,
+      "consensus_estimate_revenue": 22150000000,
+      "consensus_estimate_eps": 0.51,
+      "vehicle_production": 433371
+    },
+    "price_history": [
+      175.79,
+      171.32,
+      168.4,
+      166.25,
+      164.9,
+      170.18,
+      167.34,
+      165.87,
+      162.5,
+      160.12,
+      163.44,
+      159.78,
+      157.23,
+      155.6,
+      158.34,
+      162.45,
+      159.9,
+      156.78,
+      154.32,
+      152.8,
+      155.67,
+      158.23,
+      155.1,
+      152.4,
+      149.78,
+      153.2,
+      155.6,
+      153.82,
+      150.12,
+      147.05
+    ],
+    "sector": "Consumer Discretionary / Electric Vehicles",
+    "macro_context": "EV demand was softening across the industry in early 2024, with Ford and GM scaling back EV production targets. Chinese EV makers (BYD, Nio) were gaining market share in Europe and Asia with lower-priced models. The Fed remained restrictive; higher-for-longer interest rates were pressuring auto financing affordability and reducing EV purchase incentives. TSLA shares had declined over 40% YTD before earnings. Consumer sentiment on EV range anxiety and charging infrastructure remained mixed."
+  },
+  "ground_truth": {
+    "price_1w_after": 162.13,
+    "price_change_pct": 10.24,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Revenue declining YoY is highly unusual for a growth stock at TSLA's valuation multiple",
+      "Gross margin compression below 17.4% signals ongoing price-volume tradeoff with no clear floor",
+      "Negative free cash flow despite pausing some capital projects is a yellow flag",
+      "BYD surpassed Tesla in global EV deliveries in Q4 2023 \u2014 competitive moat question",
+      "Elon Musk's attention split across Tesla, SpaceX, X, and xAI creates execution risk",
+      "FSD (Full Self-Driving) revenue recognition tied to regulatory approvals with uncertain timeline",
+      "Energy storage business (Megapack) is growing but not enough to offset automotive weakness",
+      "Cybertruck ramp slower than guided with quality issues reported by early owners",
+      "Tesla's China market share was declining as BYD captured mid-market with Model 3 alternatives"
+    ],
+    "missed_signals": [
+      "The 'cheaper EV sooner' comment was vague and later resulted in a product strategy pivot that confused investors",
+      "AI/Dojo supercomputer capex was a real asset being severely undervalued in sum-of-parts analysis",
+      "Robotaxi announcement in August 2024 was already being planned internally"
+    ]
+  }
+}

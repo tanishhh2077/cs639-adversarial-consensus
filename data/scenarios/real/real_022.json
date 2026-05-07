@@ -1,0 +1,79 @@
+{
+  "scenario_id": "real_022",
+  "company": "GameStop Corp.",
+  "ticker": "GME",
+  "event_date": "2024-05-13",
+  "event_type": "news",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "On May 13, 2024, Keith Gill (known as 'Roaring Kitty' or 'DeepF***ingValue') posted his first tweet in approximately three years, showing a cartoon of a person leaning forward in a chair\u2014a visual associated with serious attention and the original 2021 meme stock frenzy. GameStop shares surged over 100% intraday on May 14, with trading halted multiple times. Volume exceeded 200 million shares. The event had no connection to any fundamental business development at GameStop.\n\nGameStop's actual business continued to deteriorate: the company had been closing stores, cutting headcount, and generating declining revenue as physical game sales shifted to digital distribution. Q4 FY2023 (reported in March 2024) showed revenue of $1.79 billion, down 19% YoY. The company had a substantial cash balance (~$1.2B) from prior capital raises but no clear reinvestment strategy. On June 2, Keith Gill posted a screenshot showing a $116M position in GameStop options and stock, confirming he had re-entered the trade. GameStop then announced an at-the-money equity offering of 45 million shares on June 7, diluting existing shareholders while the stock was still elevated.",
+    "key_metrics": {
+      "intraday_price_surge_pct": 1.09,
+      "fy2023_revenue": 5272000000,
+      "fy2023_revenue_yoy_growth": -0.08,
+      "q4_fy2023_revenue": 1793000000,
+      "q4_fy2023_revenue_yoy_growth": -0.19,
+      "cash_and_equivalents_bn": 1.19,
+      "store_count": 4169,
+      "short_interest_pct_float": 0.24,
+      "shares_outstanding_millions": 304,
+      "trailing_twelve_month_net_loss_millions": -6,
+      "price_before_event": 11.67,
+      "intraday_high_may_14": 64.83,
+      "shares_offered_june_7_millions": 45
+    },
+    "price_history": [
+      10.4,
+      10.55,
+      10.3,
+      10.72,
+      10.89,
+      10.63,
+      10.78,
+      10.94,
+      10.71,
+      10.86,
+      11.02,
+      10.79,
+      10.94,
+      11.1,
+      10.87,
+      11.03,
+      11.19,
+      10.96,
+      11.12,
+      11.28,
+      11.05,
+      11.21,
+      11.37,
+      11.14,
+      11.3,
+      11.46,
+      11.23,
+      11.39,
+      11.55,
+      11.67
+    ],
+    "sector": "Consumer Discretionary / Specialty Retail",
+    "macro_context": "Retail investor activity had been subdued since the 2021 meme stock frenzy. Social media (Reddit WallStreetBets, X/Twitter) remained active but had not produced a comparable short squeeze event in 3 years. GameStop's short interest was still elevated (~24% of float) as institutional traders bet on continued business deterioration. The broader market was in a steady uptrend with the S&P 500 near all-time highs. GameStop had no AI narrative, no product catalyst, and no fundamental reason for the move."
+  },
+  "ground_truth": {
+    "price_1w_after": 22.39,
+    "price_change_pct": 91.86,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Movement is entirely sentiment-driven with zero fundamental support \u2014 complete reversal risk",
+      "Short sellers will reload positions on the way up, increasing eventual downward pressure",
+      "At-the-money share offering (announced June 7) will directly dilute retail shareholders",
+      "GameStop's core business is in terminal decline \u2014 any 'catalyst' would require business model pivot",
+      "Regulatory risk: SEC scrutiny of social media-driven trading manipulation",
+      "Options market makers will hedge their gamma exposure, amplifying both upside and downside",
+      "Keith Gill's disclosed position gives him motive to exit at elevated prices",
+      "Physical gaming retail has no structural defense against digital distribution and cloud gaming"
+    ],
+    "missed_signals": [
+      "Ryan Cohen (Chairman) was positioning GameStop to announce an investment mandate similar to Berkshire \u2014 hinted but not confirmed",
+      "Options gamma squeeze mechanics were being misread as fundamental buying by retail investors"
+    ]
+  }
+}

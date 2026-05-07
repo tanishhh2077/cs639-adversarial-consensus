@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_004",
+  "company": "The Boeing Company",
+  "ticker": "BA",
+  "event_date": "2024-01-05",
+  "event_type": "news",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "On January 5, 2024, a door plug panel blew out on an Alaska Airlines Boeing 737 MAX 9 aircraft mid-flight (Flight 1282), leaving a gaping hole in the fuselage. The aircraft was at approximately 16,000 feet altitude. Miraculously, the seat next to the opening was unoccupied and no fatalities occurred, though multiple passengers suffered minor injuries. The FAA immediately grounded all 171 U.S.-operated 737 MAX 9 aircraft pending inspection.\n\nThe incident was traced to missing bolts on the door plug assembly at Boeing's Renton, Washington facility. The NTSB and FAA launched full investigations. Boeing CEO Dave Calhoun issued a public apology and acknowledged 'a quality escape' in the manufacturing process. The grounding impacted Alaska Airlines and United Airlines, which collectively operated the largest MAX 9 fleets. The event occurred less than five years after the 737 MAX 8 crashes (Lion Air and Ethiopian Airlines) that killed 346 people and led to a 20-month global grounding. Investors immediately feared a repeat scenario and a new regulatory overhaul.",
+    "key_metrics": {
+      "aircraft_grounded": 171,
+      "airlines_impacted_primary": 2,
+      "737_max_9_in_fleet_alaska": 65,
+      "737_max_9_in_fleet_united": 79,
+      "boeing_share_price_day_before": 254.27,
+      "boeing_backlog_orders_bn": 469,
+      "boeing_ytd_deliveries_2023": 528,
+      "boeing_737_max_deliveries_2023": 396,
+      "boeing_debt_bn": 52.3,
+      "prior_year_revenue_bn": 77.8,
+      "prior_year_operating_loss_bn": -1.5
+    },
+    "price_history": [
+      255.0,
+      252.8,
+      254.6,
+      257.3,
+      253.1,
+      249.8,
+      252.4,
+      255.9,
+      258.2,
+      254.7,
+      257.1,
+      261.3,
+      258.8,
+      255.5,
+      258.7,
+      262.4,
+      259.9,
+      256.3,
+      259.8,
+      263.5,
+      260.1,
+      257.4,
+      261.8,
+      265.2,
+      262.5,
+      258.9,
+      263.2,
+      267.1,
+      263.4,
+      254.27
+    ],
+    "sector": "Industrials / Aerospace & Defense",
+    "macro_context": "Aerospace sector had been recovering strongly post-COVID with record airline bookings and a multi-year delivery backlog. Defense spending was elevated due to Russia-Ukraine and Middle East conflicts. Boeing's balance sheet remained stressed from the prior MAX crisis and COVID production cuts, carrying ~$52B in debt. The broader equity market was in a mild risk-off mode entering 2024 with the Fed maintaining restrictive policy. Airline stocks were already pricing in strong travel demand for summer 2024."
+  },
+  "ground_truth": {
+    "price_1w_after": 237.27,
+    "price_change_pct": -6.68,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Manufacturing quality control systemic issues \u2014 not a one-off; suggests broader production problems",
+      "Regulatory trust deficit: FAA had already been criticized for insufficient MAX 8 oversight",
+      "Financial fragility: ~$52B in debt means Boeing cannot easily absorb another prolonged grounding",
+      "Production rate cap imposed by FAA would limit 737 deliveries and cash generation",
+      "Airlines will seek compensation/credits from Boeing for grounding-related losses",
+      "Airbus A321neo backlog lengthening as airlines consider alternatives",
+      "Congressional hearings and potential new certification requirements could delay future programs",
+      "CEO credibility at risk \u2014 Calhoun had promised improved culture since the 2018-2019 crisis",
+      "Whistleblower reports of unsafe quality practices at supplier Spirit AeroSystems",
+      "Supply chain ramifications: Spirit AeroSystems stock also fell sharply"
+    ],
+    "missed_signals": [
+      "Spirit AeroSystems supplier relationship was more deeply compromised than public statements indicated",
+      "Dave Calhoun would eventually resign by year-end 2024 \u2014 departure risk was not being priced in",
+      "737 MAX production rate would be capped at 38/month by FAA for the remainder of 2024"
+    ]
+  }
+}

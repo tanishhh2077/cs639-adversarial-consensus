@@ -1,0 +1,82 @@
+{
+  "scenario_id": "real_005",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "event_date": "2024-05-02",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Apple reported Q2 FY2024 results on May 2, 2024, beating revenue and EPS estimates and announcing a record $110 billion share repurchase authorization\u2014the largest in Apple's history\u2014sending shares up approximately 6% in after-hours trading. Revenue of $90.75 billion beat the $90.01 billion consensus, despite declining 4% year-over-year on iPhone weakness. EPS of $1.53 beat the $1.50 consensus. Services revenue grew 14% YoY to a record $23.87 billion, maintaining ~74% gross margins and serving as the key margin driver for the business.\n\niPhone revenue of $45.96 billion missed estimates slightly on continued weakness in China, where Huawei's Mate 60 series (using domestically-produced 7nm chips) had taken significant market share. CEO Tim Cook highlighted that the installed base of active devices had reached a new all-time high across all product categories. Apple guided Q3 revenue to grow 'low- to mid-single digits' year-over-year, roughly in line with expectations. The massive buyback announcement dominated investor attention and overshadowed the China headwind discussion.",
+    "key_metrics": {
+      "revenue": 90753000000,
+      "revenue_yoy_growth": -0.043,
+      "eps_gaap": 1.53,
+      "gross_margin": 0.464,
+      "services_revenue": 23867000000,
+      "services_gross_margin": 0.742,
+      "iphone_revenue": 45963000000,
+      "mac_revenue": 7451000000,
+      "ipad_revenue": 5559000000,
+      "wearables_revenue": 7914000000,
+      "share_buyback_authorized_bn": 110,
+      "dividend_per_share": 0.25,
+      "consensus_estimate_revenue": 90010000000,
+      "consensus_estimate_eps": 1.5,
+      "active_installed_base_bn": 2.2
+    },
+    "price_history": [
+      167.78,
+      169.52,
+      171.3,
+      168.9,
+      172.4,
+      175.16,
+      173.0,
+      176.55,
+      178.2,
+      175.5,
+      177.9,
+      180.35,
+      178.1,
+      174.5,
+      176.9,
+      179.66,
+      177.4,
+      174.0,
+      176.8,
+      179.2,
+      177.6,
+      173.8,
+      176.2,
+      178.99,
+      176.5,
+      172.8,
+      175.4,
+      178.6,
+      175.1,
+      170.33
+    ],
+    "sector": "Technology / Consumer Electronics",
+    "macro_context": "The Fed remained on hold at 5.25\u20135.50% with markets pushing back rate cut expectations. China's economic recovery remained sluggish, pressuring companies with significant China revenue exposure. The iPhone upgrade cycle was in a trough year \u2014 iPhone 15 had not driven the expected upgrade wave. Market sentiment was cautious after a period of tech sector outperformance. AI product announcements from Apple (Apple Intelligence) were expected at WWDC in June."
+  },
+  "ground_truth": {
+    "price_1w_after": 181.71,
+    "price_change_pct": 6.68,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "China revenue declining as Huawei captures premium market with sanctioned-but-functional Kirin chips",
+      "iPhone revenue YoY decline for third consecutive quarter signals upgrade cycle weakness",
+      "AI differentiation unclear \u2014 Apple Intelligence features still unannounced; risk of falling behind",
+      "Services growth decelerating from 20%+ to 14% range as base matures",
+      "Regulatory risk: EU Digital Markets Act App Store rulings could impact Services revenue",
+      "India manufacturing ramp still years away from replacing China production volume",
+      "Vision Pro launch was soft; AR/VR strategy unclear and high price limits addressable market",
+      "No new product category since Apple Watch (2015) creates portfolio concentration risk"
+    ],
+    "missed_signals": [
+      "Apple Intelligence announcement at WWDC (June 2024) would be larger catalyst than market expected",
+      "Services gross margin expansion to 75%+ was more durable than consensus models assumed",
+      "India growth was accelerating faster than disclosed in regional breakdowns"
+    ]
+  }
+}

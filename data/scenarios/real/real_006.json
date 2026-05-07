@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_006",
+  "company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "event_date": "2024-04-30",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Amazon reported Q1 2024 earnings on April 30, 2024, delivering a substantial beat across every major segment and providing Q2 guidance well above consensus. Total revenue grew 13% YoY to $143.3 billion, beating the $142.5 billion estimate. EPS of $0.98 crushed the $0.83 consensus. Most significantly, AWS revenue grew 17% YoY to $25.04 billion, accelerating from 13% growth in Q4 2023 and signaling that cloud demand was genuinely reaccelerating\u2014not merely stabilizing\u2014as customers completed their optimization cycles and began new AI workload buildouts.\n\nOperating income surged to $15.3 billion, representing an 10.7% operating margin\u2014a record level and a dramatic improvement from $4.8 billion a year earlier. Advertising revenue grew 24% YoY to $11.82 billion, ahead of estimates. Amazon guided Q2 2024 revenue to $144\u2013$149 billion (midpoint above the $143.6B consensus) and operating income of $10.0\u2013$14.0 billion, with the midpoint well above the $10.5 billion consensus. CEO Andy Jassy highlighted AWS's AI portfolio, noting that the Bedrock platform and Trainium/Inferentia chips were gaining significant traction with enterprise customers.",
+    "key_metrics": {
+      "revenue": 143313000000,
+      "revenue_yoy_growth": 0.13,
+      "eps_gaap": 0.98,
+      "operating_income": 15307000000,
+      "operating_margin": 0.107,
+      "aws_revenue": 25037000000,
+      "aws_revenue_yoy_growth": 0.17,
+      "advertising_revenue": 11824000000,
+      "north_america_revenue": 86341000000,
+      "international_revenue": 31900000000,
+      "q2_guidance_revenue_low": 144000000000,
+      "q2_guidance_revenue_high": 149000000000,
+      "q2_guidance_op_income_low": 10000000000,
+      "q2_guidance_op_income_high": 14000000000,
+      "consensus_estimate_revenue": 142500000000,
+      "consensus_estimate_eps": 0.83
+    },
+    "price_history": [
+      177.9,
+      180.2,
+      182.5,
+      179.8,
+      183.4,
+      186.1,
+      184.3,
+      187.6,
+      189.8,
+      187.1,
+      190.4,
+      192.7,
+      190.2,
+      187.5,
+      190.8,
+      193.5,
+      191.1,
+      188.4,
+      191.7,
+      194.2,
+      192.0,
+      189.3,
+      192.6,
+      195.1,
+      193.4,
+      190.7,
+      194.0,
+      196.5,
+      194.3,
+      181.38
+    ],
+    "sector": "Consumer Discretionary / Technology / Cloud",
+    "macro_context": "Cloud spending optimization cycles that had suppressed AWS growth in 2022\u20132023 were ending as enterprises moved to new AI workload buildouts. Microsoft Azure had already confirmed similar reacceleration in its April earnings. Fed policy remained restrictive but equity markets were resilient. The broader tech sector had recovered strongly from 2022 lows. Enterprise IT budgets were increasingly being reallocated toward generative AI projects, benefiting cloud infrastructure providers."
+  },
+  "ground_truth": {
+    "price_1w_after": 194.5,
+    "price_change_pct": 7.23,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "AWS growth rate comparison gets harder in H2 2024 as reacceleration laps easier 2023 comps",
+      "Retail operating margins remain structurally lower than peers; logistics network is a fixed-cost trap",
+      "Alexa AI investment ($4B+ in Anthropic) may not translate to material revenue for years",
+      "Regulatory risk: FTC and EU competition investigations into AWS market power",
+      "Prime membership growth is maturing in core US market; international expansion is lower-margin",
+      "Advertising business may face competition from TikTok and retail media networks (Walmart Connect, Target Roundel)",
+      "International segment still operating near break-even despite years of investment"
+    ],
+    "missed_signals": [
+      "Project Kuiper (satellite internet) capex would accelerate, consuming significant free cash flow",
+      "AWS revenue would continue accelerating to 19% growth in Q2 \u2014 consensus was modeling deceleration"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "scenario_id": "real_007",
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "event_date": "2024-04-25",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Alphabet reported Q1 2024 earnings on April 25, 2024, beating estimates on revenue and EPS while announcing its first-ever cash dividend of $0.20 per share quarterly and a $70 billion additional share buyback authorization\u2014catalysts that sent the stock up approximately 10% in after-hours trading. Revenue grew 15% YoY to $80.54 billion, ahead of the $78.72 billion consensus. EPS of $1.89 beat the $1.53 consensus by a wide margin. Google Search & Other grew 14% to $46.16 billion. Google Cloud revenue accelerated to 28% growth, reaching $9.57 billion, above the $9.37 billion estimate, and its operating margin expanded to 9.4% from near-zero profitability the prior year.\n\nYouTube advertising revenue grew 21% YoY to $8.09 billion, above estimates of $7.69 billion. The dividend announcement was interpreted as a signal of confidence in sustained free cash flow generation. Total costs and expenses grew only 6% YoY versus 15% revenue growth, demonstrating strong operating leverage. CFO Ruth Porat flagged continued investment in AI infrastructure, with Q2 capex expected to equal or exceed Q1's $12 billion level.",
+    "key_metrics": {
+      "revenue": 80539000000,
+      "revenue_yoy_growth": 0.15,
+      "eps_gaap": 1.89,
+      "operating_income": 25472000000,
+      "operating_margin": 0.316,
+      "google_search_revenue": 46156000000,
+      "google_cloud_revenue": 9574000000,
+      "google_cloud_yoy_growth": 0.28,
+      "youtube_ad_revenue": 8090000000,
+      "other_bets_revenue": 495000000,
+      "other_bets_op_loss": -1020000000,
+      "quarterly_dividend": 0.2,
+      "additional_buyback_bn": 70,
+      "capex_q1": 12000000000,
+      "consensus_estimate_revenue": 78720000000,
+      "consensus_estimate_eps": 1.53
+    },
+    "price_history": [
+      155.8,
+      157.4,
+      159.2,
+      157.0,
+      160.5,
+      162.8,
+      161.1,
+      163.7,
+      165.4,
+      163.2,
+      166.0,
+      168.3,
+      166.5,
+      164.2,
+      167.0,
+      169.5,
+      167.8,
+      165.4,
+      168.2,
+      170.6,
+      168.9,
+      166.5,
+      169.3,
+      171.8,
+      170.1,
+      167.7,
+      170.5,
+      173.0,
+      171.3,
+      161.97
+    ],
+    "sector": "Technology / Internet / Advertising",
+    "macro_context": "The digital advertising market was recovering in 2024 after the 2022 downturn, with search advertising showing particular resilience. The AI search threat from Microsoft Bing/Copilot integration had not materially dented Google Search market share (still ~90% globally). DOJ antitrust trial regarding Google Search distribution agreements was ongoing with verdict expected later in 2024. OpenAI's ChatGPT and Perplexity were growing but primarily serving informational use cases, not replacing commercial-intent search queries that drive Google's revenue."
+  },
+  "ground_truth": {
+    "price_1w_after": 175.45,
+    "price_change_pct": 8.32,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "DOJ antitrust ruling (expected Aug 2024) poses existential risk to Google Search TAC agreements",
+      "AI search disruption \u2014 Perplexity and ChatGPT with search integration are early-stage but directional threats",
+      "Google Cloud growing but still a distant third to AWS and Azure with structural cost disadvantages",
+      "Other Bets (Waymo, DeepMind) are ~$4B annual cash burn with uncertain commercialization timelines",
+      "YouTube facing TikTok competition for short-form video advertising dollars",
+      "Gemini AI product has had several high-profile failures/controversies affecting brand trust",
+      "Regulatory pressure in EU on Android, Search, and Maps creating compliance costs",
+      "Capital expenditure rise to $12B+/quarter will constrain free cash flow growth"
+    ],
+    "missed_signals": [
+      "DOJ ruling would find Google guilty of monopoly maintenance in Search \u2014 not yet priced in",
+      "Google Cloud margin expansion trajectory was steeper than consensus models \u2014 would reach 11%+ by Q2"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "scenario_id": "real_021",
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "event_date": "2024-10-29",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Alphabet reported Q3 2024 earnings on October 29, 2024, delivering a strong beat across Search, Cloud, and YouTube. Revenue grew 15% YoY to $88.27 billion, beating the $86.30 billion estimate. EPS of $2.12 crushed the $1.85 estimate. Google Cloud was the standout: revenue grew 35% YoY to $11.35 billion, above the $10.88 billion estimate, and operating margin reached 17%\u2014a dramatic improvement from 10.4% a year earlier. YouTube advertising revenue grew 12.3% YoY to $8.92 billion.\n\nThe company generated $17.6 billion in free cash flow, maintaining its position as one of the strongest cash generators in corporate history. However, the earnings report occurred just months after DOJ Judge Amit Mehta issued a landmark ruling (August 5, 2024) finding that Google had illegally maintained its monopoly in the general search market through exclusive distribution agreements (primarily with Apple). The remedies phase was ongoing, with the DOJ seeking structural remedies including potentially forcing Google to divest Chrome browser, Android OS, or terminating the Apple Search arrangement worth $18\u201320B annually.",
+    "key_metrics": {
+      "revenue": 88268000000,
+      "revenue_yoy_growth": 0.15,
+      "eps_gaap": 2.12,
+      "google_search_revenue": 49385000000,
+      "google_cloud_revenue": 11353000000,
+      "google_cloud_yoy_growth": 0.35,
+      "google_cloud_op_margin": 0.17,
+      "youtube_ad_revenue": 8921000000,
+      "operating_income": 28521000000,
+      "free_cash_flow_q3": 17626000000,
+      "doj_antitrust_ruling_date": "2024-08-05",
+      "apple_search_agreement_value_annual_bn": 18,
+      "consensus_estimate_revenue": 86300000000,
+      "consensus_estimate_eps": 1.85
+    },
+    "price_history": [
+      162.2,
+      163.8,
+      165.5,
+      163.9,
+      166.5,
+      168.2,
+      166.6,
+      168.3,
+      170.0,
+      168.4,
+      170.1,
+      171.8,
+      170.2,
+      171.9,
+      173.6,
+      172.0,
+      173.7,
+      175.4,
+      173.8,
+      175.5,
+      177.2,
+      175.6,
+      177.3,
+      179.0,
+      177.4,
+      179.1,
+      180.8,
+      179.2,
+      180.9,
+      163.9
+    ],
+    "sector": "Technology / Internet / Advertising / Cloud",
+    "macro_context": "The DOJ antitrust ruling (August 2024) created structural uncertainty over Google's business model. Remedies hearings were scheduled for late 2024 with potential structural breakup or forced behavioral changes. The US presidential election (November 5, 2024) created policy uncertainty \u2014 Trump was expected to be less aggressive on tech antitrust. AI search alternatives (Perplexity, ChatGPT Search) were growing but had not materially impacted Google's 90%+ global share. Google Cloud was winning significant enterprise AI workloads."
+  },
+  "ground_truth": {
+    "price_1w_after": 182.25,
+    "price_change_pct": 11.19,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "DOJ antitrust remedies could require elimination of Apple search deal ($18-20B annual revenue)",
+      "Chrome or Android divestiture would eliminate key distribution advantages for Search and Play",
+      "AI search (Perplexity, ChatGPT) growing faster than expected in informational query category",
+      "Google Gemini AI had multiple high-profile product failures in early 2024 damaging brand reputation",
+      "Cloud growth reacceleration requires continued capex increases ($13B+/quarter) with uncertain returns",
+      "YouTube Shorts monetization (ad revenue per view) still meaningfully below YouTube long-form",
+      "Other Bets losses continuing at $1B+/quarter \u2014 Waymo commercialization is slow"
+    ],
+    "missed_signals": [
+      "Trump administration would be significantly less aggressive on antitrust remedies \u2014 DOJ settlement risk evaporated",
+      "Google Cloud would reach 20%+ operating margin within 2 quarters \u2014 faster than any analyst modeled"
+    ]
+  }
+}

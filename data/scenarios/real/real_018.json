@@ -1,0 +1,79 @@
+{
+  "scenario_id": "real_018",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "event_date": "2025-02-26",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "NVIDIA reported Q4 FY2025 earnings on February 26, 2025, with record revenue of $39.33 billion, up 78% YoY and 12% sequentially, beating the $38.04 billion consensus. Non-GAAP EPS of $0.89 beat the $0.85 estimate. Data Center revenue of $35.58 billion grew 93% YoY, driven by the Blackwell GPU ramp which had successfully overcome manufacturing yield challenges from Q3 2024. Full-year FY2025 revenue reached $130.5 billion, up 114% from FY2024.\n\nManagement guided Q1 FY2026 revenue to $43.0 billion \u00b1 2%, well above the $41.8 billion consensus. Gross margin of 73.5% (non-GAAP) was slightly below the 74.6% estimate, reflecting Blackwell's more complex manufacturing cost structure during its ramp phase. CEO Jensen Huang highlighted 'reasoning AI' as an additional scaling dimension beyond training\u2014implying significantly higher long-run compute demand per query. The DeepSeek R1 model release (January 20, 2025) had briefly sent NVIDIA shares down 17% intraday on January 27, but Huang argued that reasoning models actually require more compute, not less.",
+    "key_metrics": {
+      "revenue": 39331000000,
+      "revenue_yoy_growth": 0.78,
+      "eps_non_gaap": 0.89,
+      "gross_margin_non_gaap": 0.735,
+      "data_center_revenue": 35580000000,
+      "gaming_revenue": 2489000000,
+      "professional_visualization_revenue": 511000000,
+      "automotive_revenue": 570000000,
+      "q1_fy26_guidance_revenue": 43000000000,
+      "fy2025_total_revenue": 130497000000,
+      "consensus_estimate_revenue": 38040000000,
+      "consensus_estimate_eps": 0.85,
+      "blackwell_revenue_q4": 11000000000
+    },
+    "price_history": [
+      131.6,
+      134.2,
+      138.4,
+      135.8,
+      140.1,
+      143.7,
+      140.3,
+      144.8,
+      148.4,
+      144.9,
+      149.5,
+      153.1,
+      149.6,
+      154.2,
+      157.9,
+      154.4,
+      159.1,
+      162.8,
+      159.2,
+      163.9,
+      167.7,
+      164.1,
+      168.9,
+      172.7,
+      169.1,
+      112.0,
+      116.5,
+      120.3,
+      124.7,
+      128.42
+    ],
+    "sector": "Technology / Semiconductors",
+    "macro_context": "DeepSeek R1 (released January 20, 2025) had claimed comparable AI performance at a fraction of NVIDIA's training cost, triggering a $590B market cap single-day loss on January 27, 2025. However, subsequent analysis showed DeepSeek's inference efficiency gains were real but training still required H100/H800 clusters. US export controls on AI chips to China were tightening. The Trump administration had issued new AI governance executive orders. Hyperscaler capex guidance for 2025 was running $50-100B+ per major cloud provider. Blackwell architecture was ramping at all major cloud data centers globally."
+  },
+  "ground_truth": {
+    "price_1w_after": 120.88,
+    "price_change_pct": -5.87,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Gross margin compression (73.5% vs 78.4% peak) implies Blackwell economics worse than H100 at scale",
+      "DeepSeek and model efficiency improvements could reduce long-run compute intensity per AI task",
+      "Reasoning model scaling law is unproven \u2014 'more compute per query' thesis could be disrupted",
+      "US export controls limiting China market (previously 20%+ of revenue) are a permanent headwind",
+      "Blackwell supply chain is complex \u2014 CoWoS-L packaging has low industry yield rates",
+      "Customer CapEx concentration: if any one hyperscaler pauses, NVIDIA's sequential growth stalls",
+      "AMD MI300X/MI350 competitive roadmap is closer to parity than 12-18 months ago",
+      "NVIDIA trading at 25x+ forward revenue requires that the current AI compute cycle has no downturn"
+    ],
+    "missed_signals": [
+      "Reasoning AI compute demand would prove to be 10-100x training compute over 12 months \u2014 the market underestimated this",
+      "Rubin GPU architecture already in customer hands for testing \u2014 next generation cycle starting earlier than expected"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_020",
+  "company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "event_date": "2025-01-29",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Meta Platforms reported Q4 2024 earnings on January 29, 2025, delivering a blowout quarter that validated the company's heavy AI investment thesis. Revenue grew 21% YoY to $48.39 billion, beating the $47.05 billion estimate. EPS of $8.02 beat the $6.76 estimate by an extraordinary margin. Daily active people across the family of apps reached 3.35 billion, up 5% YoY. Operating margin expanded to 48% from 41% a year earlier, demonstrating exceptional operating leverage as AI-driven ad targeting improvements accelerated revenue without proportional cost increases.\n\nAd impressions grew 6% YoY while the average price per ad grew 14%\u2014a combination indicating both volume and pricing power. Threads had reached 320 million monthly active users. Management guided Q1 2025 revenue to $39.5\u2013$41.8 billion (above the $41.0 billion consensus midpoint) and raised FY2025 capex guidance to $60\u2013$65 billion, nearly doubling 2024's $38 billion level, to fund AI infrastructure expansion. CEO Zuckerberg declared 2025 the year of 'agentic AI.'",
+    "key_metrics": {
+      "revenue": 48385000000,
+      "revenue_yoy_growth": 0.21,
+      "eps_gaap": 8.02,
+      "operating_income": 23353000000,
+      "operating_margin": 0.48,
+      "daily_active_people_bn": 3.35,
+      "ad_impressions_growth": 0.06,
+      "average_price_per_ad_growth": 0.14,
+      "threads_mau_millions": 320,
+      "fy2025_capex_guidance_low": 60000000000,
+      "fy2025_capex_guidance_high": 65000000000,
+      "q1_2025_guidance_revenue_low": 39500000000,
+      "q1_2025_guidance_revenue_high": 41800000000,
+      "consensus_estimate_revenue": 47050000000,
+      "consensus_estimate_eps": 6.76
+    },
+    "price_history": [
+      567.0,
+      573.4,
+      580.1,
+      576.5,
+      583.2,
+      590.0,
+      586.4,
+      593.2,
+      600.0,
+      596.3,
+      603.2,
+      610.1,
+      606.4,
+      613.3,
+      620.3,
+      616.6,
+      623.6,
+      630.6,
+      626.9,
+      634.0,
+      641.1,
+      637.3,
+      644.5,
+      651.7,
+      648.0,
+      655.2,
+      662.5,
+      658.7,
+      666.1,
+      617.89
+    ],
+    "sector": "Technology / Social Media",
+    "macro_context": "Digital advertising market was experiencing its strongest growth since 2021, driven by AI-enhanced ad targeting and measurement tools that improved ROAS (return on ad spend) for advertisers. TikTok's potential US ban (under review under the law requiring divestiture or ban by Jan 19, 2025) was creating advertising budget rotation toward Meta. The Fed had cut rates 75bps in 2024 H2. Meta Llama 3 open-source models had gained wide developer adoption. The Trump administration was expected to be more favorable to Big Tech than Biden's FTC under Lina Khan."
+  },
+  "ground_truth": {
+    "price_1w_after": 687.9,
+    "price_change_pct": 11.32,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "FY2025 capex of $60-65B raises the investment-to-revenue ratio significantly \u2014 ROI timing uncertain",
+      "TikTok ban reversal (Trump granted extension on Jan 20) eliminates expected ad budget tailwind",
+      "Reality Labs still burning $5B+/year with no clear monetization path for Quest hardware",
+      "Regulatory risk: FTC antitrust suit against Instagram/WhatsApp acquisition still active",
+      "48% operating margin sets an extremely high bar \u2014 any cost increase or revenue miss will stand out",
+      "Threads monetization has not started \u2014 320M users with zero revenue contribution",
+      "European privacy regulations (GDPR) continuing to create compliance costs and targeting limitations"
+    ],
+    "missed_signals": [
+      "AI-powered ad creative tools (Meta Advantage+) were having a larger impact on advertiser spend than disclosed",
+      "WhatsApp Business monetization was accelerating in India/Brazil \u2014 not reflected in guidance"
+    ]
+  }
+}

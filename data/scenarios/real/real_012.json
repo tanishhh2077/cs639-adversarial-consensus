@@ -1,0 +1,78 @@
+{
+  "scenario_id": "real_012",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "event_date": "2024-08-28",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "NVIDIA reported Q2 FY2025 earnings on August 28, 2024, again beating estimates significantly: revenue of $30.04 billion grew 122% YoY and 15% sequentially, beating the $28.86 billion consensus. Non-GAAP EPS of $0.68 beat the $0.64 estimate. Data Center revenue of $26.3 billion grew 154% YoY. Gross margin reached 78.4% (non-GAAP), up from 78.0% in Q1. Management guided Q3 FY2025 revenue to $32.5 billion \u00b1 2%, above the $31.7 billion consensus.\n\nDespite the strong beat and guide-up, the stock initially fell approximately 6% in after-hours trading before partially recovering\u2014an unusual reaction that reflected the 'whisper number' phenomenon: the buy-side was modeling $32B+ in revenue, and the $30B actual result, while above consensus, felt light relative to the most aggressive expectations. CEO Jensen Huang disclosed that Blackwell GPU production was ramping and that demand 'far exceeds supply.' He also acknowledged that Blackwell would have some production challenges in Q3 related to a design change made to improve manufacturing yields.",
+    "key_metrics": {
+      "revenue": 30040000000,
+      "revenue_yoy_growth": 1.22,
+      "eps_non_gaap": 0.68,
+      "gross_margin_non_gaap": 0.784,
+      "data_center_revenue": 26300000000,
+      "gaming_revenue": 2880000000,
+      "professional_visualization_revenue": 454000000,
+      "automotive_revenue": 346000000,
+      "q3_guidance_revenue": 32500000000,
+      "consensus_estimate_revenue": 28860000000,
+      "consensus_estimate_eps": 0.64,
+      "buyside_whisper_revenue": 32000000000
+    },
+    "price_history": [
+      116.78,
+      118.4,
+      121.3,
+      117.9,
+      120.5,
+      123.2,
+      119.8,
+      122.6,
+      125.4,
+      121.9,
+      124.7,
+      127.5,
+      124.1,
+      127.0,
+      129.8,
+      126.4,
+      129.2,
+      132.1,
+      128.7,
+      131.5,
+      134.4,
+      130.9,
+      133.8,
+      136.7,
+      133.2,
+      136.1,
+      139.1,
+      135.6,
+      128.3,
+      125.61
+    ],
+    "sector": "Technology / Semiconductors",
+    "macro_context": "The Fed signaled at Jackson Hole (August 23, 2024) that rate cuts were coming in September, triggering a risk-on market shift. The Magnificent Seven stocks had recovered from a July correction. AI capex spending announcements from Microsoft, Google, Amazon, and Meta were all tracking above initial FY2024 guidance. Blackwell GPU architecture had been officially unveiled in March 2024 at GTC. AMD MI300X was ramping production but remained far smaller in market share than NVIDIA H100/H200."
+  },
+  "ground_truth": {
+    "price_1w_after": 116.0,
+    "price_change_pct": -7.65,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Blackwell production design change creates yield uncertainty and potential Q3/Q4 delivery risk",
+      "'Beat-and-slight-miss-vs-whisper' pattern risks momentum investor rotation",
+      "Gross margin pressure expected as Blackwell ramps (complex CoWoS-L packaging is expensive)",
+      "Antitrust investigation in France (DOJ also circling) creates headline risk",
+      "Customer concentration: Microsoft, Google, Meta, Amazon represent majority of revenue",
+      "H200 to Blackwell transition creates risk of order pauses during the product cycle",
+      "NVIDIA stock had run +170% YTD before earnings \u2014 extremely high bar embedded",
+      "China Hopper (H20) sales limited by export controls \u2014 large addressable market being cut off"
+    ],
+    "missed_signals": [
+      "Blackwell revenue would be 'several billion' in Q3 and accelerate dramatically in Q4 \u2014 supply was the only constraint",
+      "Sovereign AI demand (Middle East, India, Japan) was growing faster than hyperscaler demand in relative terms"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_011",
+  "company": "Starbucks Corporation",
+  "ticker": "SBUX",
+  "event_date": "2024-07-30",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Starbucks reported Q3 FY2024 earnings on July 30, 2024, missing estimates across every key metric and withdrawing full-year guidance\u2014a severe step that implied management had lost visibility into recovery timing. Global comparable store sales declined 3%, far worse than the +0.3% consensus estimate. US comparable store sales declined 2% (vs. +0.4% estimate) on transaction declines of 6%, reflecting customer traffic loss at multiple price points. Revenue of $9.11 billion missed the $9.24 billion estimate, declining 1% YoY. EPS of $0.93 missed the $1.02 estimate.\n\nCEO Laxman Narasimhan acknowledged broad-based weakness across income segments: lower-income consumers were trading down, while higher-income consumers were visiting less frequently due to operational issues including long wait times and order complexity. China comparable store sales fell 14% YoY as economic malaise and local competition (Luckin Coffee) intensified. Management suspended FY2024 guidance entirely. Shortly after earnings, the company was reported to be in discussions with Chipotle CEO Brian Niccol to replace Narasimhan.",
+    "key_metrics": {
+      "revenue": 9113000000,
+      "revenue_yoy_growth": -0.01,
+      "eps_gaap": 0.93,
+      "global_comp_store_sales_growth": -0.03,
+      "us_comp_store_sales_growth": -0.02,
+      "us_transaction_growth": -0.06,
+      "us_average_ticket_growth": 0.04,
+      "china_comp_store_sales_growth": -0.14,
+      "operating_margin": 0.143,
+      "active_rewards_members_us_millions": 32.8,
+      "stores_total": 39477,
+      "consensus_estimate_revenue": 9240000000,
+      "consensus_estimate_eps": 1.02,
+      "consensus_estimate_comp_store": 0.003
+    },
+    "price_history": [
+      81.1,
+      80.4,
+      81.8,
+      80.2,
+      82.5,
+      81.9,
+      83.2,
+      82.6,
+      84.0,
+      83.3,
+      84.7,
+      83.9,
+      85.3,
+      84.6,
+      85.9,
+      84.2,
+      85.6,
+      84.8,
+      86.2,
+      85.4,
+      86.8,
+      85.1,
+      86.5,
+      85.7,
+      87.1,
+      86.3,
+      87.7,
+      86.0,
+      87.4,
+      79.44
+    ],
+    "sector": "Consumer Discretionary / Restaurant",
+    "macro_context": "Consumer spending was bifurcating in mid-2024: upper-income households remained resilient while lower-income consumers were cutting discretionary spending. Restaurant traffic was under pressure from cumulative food price inflation of 25-30% since 2019. Fast food and coffee chains had all raised prices aggressively post-COVID and were now facing pushback. McDonald's, Burger King, and others were reporting similar traffic declines. China's consumer recovery from COVID reopening had stalled, with youth unemployment at record highs."
+  },
+  "ground_truth": {
+    "price_1w_after": 76.62,
+    "price_change_pct": -3.54,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Guidance suspension is a red flag \u2014 management has no visibility into the recovery timeline",
+      "Transaction declines (-6%) indicate customer defection, not just ticket compression",
+      "China business is a structural deterioration story, not cyclical \u2014 Luckin Coffee is taking share permanently",
+      "CEO Narasimhan's turnaround plan had been in place for 18 months with no visible improvement",
+      "Price increases have reached a ceiling \u2014 further hikes risk accelerating traffic losses",
+      "Mobile ordering complexity is increasing wait times and degrading in-store experience",
+      "Rewards program dilution: heavy discounting to drive loyalty membership at cost to margins",
+      "Store count growth strategy in over-saturated US markets cannibalizing existing locations",
+      "Labor cost inflation (union organizing, California minimum wage) structurally pressures margins"
+    ],
+    "missed_signals": [
+      "Brian Niccol was already in advanced CEO discussions \u2014 announcement came August 13, 2024 and caused +24% spike",
+      "The operational turnaround (removing customization complexity, reestablishing condiment bars) was simpler and faster than feared"
+    ]
+  }
+}

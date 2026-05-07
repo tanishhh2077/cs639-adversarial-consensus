@@ -1,0 +1,82 @@
+{
+  "scenario_id": "real_001",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "event_date": "2024-02-21",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "NVIDIA reported record Q4 FY2024 results on February 21, 2024, dramatically surpassing analyst expectations across every major metric. Revenue came in at $22.1 billion, up 265% year-over-year and 22% sequentially, driven almost entirely by Data Center revenue of $18.4 billion\u2014up 409% YoY\u2014as hyperscalers and cloud providers scrambled to secure H100 GPU allocation to build out generative AI infrastructure. CEO Jensen Huang stated that 'accelerated computing and generative AI have hit the tipping point' and that demand for NVIDIA's compute substantially exceeds supply.\n\nFor fiscal year 2024, NVIDIA posted revenue of $60.9 billion, up 126% from FY2023, with non-GAAP EPS of $12.96, up 288%. Gross margins expanded to 76.7% for the quarter (non-GAAP: 76.0%), up approximately 10 percentage points year-over-year. Management guided Q1 FY2025 revenue to $24.0 billion \u00b1 2%, well above the $21.9 billion consensus. NVIDIA also announced a 150% increase in its quarterly cash dividend. Gaming revenue of $2.87 billion returned to solid growth after a prior-year inventory correction cycle. The company acknowledged Blackwell GPU architecture development was on track and sampling had begun with major cloud customers.",
+    "key_metrics": {
+      "revenue": 22103000000,
+      "revenue_yoy_growth": 2.65,
+      "eps_gaap": 4.93,
+      "eps_non_gaap": 5.16,
+      "gross_margin_gaap": 0.767,
+      "gross_margin_non_gaap": 0.76,
+      "operating_income": 13615000000,
+      "operating_margin": 0.616,
+      "data_center_revenue": 18400000000,
+      "gaming_revenue": 2870000000,
+      "q1_fy25_guidance_revenue": 24000000000,
+      "consensus_estimate_revenue": 20410000000,
+      "consensus_estimate_eps": 4.59,
+      "revenue_beat_pct": 0.083
+    },
+    "price_history": [
+      495.22,
+      502.1,
+      498.75,
+      510.3,
+      518.6,
+      514.2,
+      521.8,
+      529.4,
+      535.9,
+      528.7,
+      541.2,
+      548.8,
+      544.5,
+      552.3,
+      559.7,
+      565.1,
+      558.4,
+      572.6,
+      580.2,
+      575.8,
+      589.4,
+      594.1,
+      601.3,
+      612.5,
+      608.9,
+      619.7,
+      625.4,
+      631.2,
+      638.6,
+      627.83
+    ],
+    "sector": "Technology / Semiconductors",
+    "macro_context": "The Federal Reserve held interest rates at 5.25\u20135.50% with markets debating the timing of first cuts. S&P 500 was near all-time highs amid an AI-driven rally. Generative AI capital spending was accelerating rapidly, with Microsoft, Google, Amazon, and Meta all guiding to substantially higher data center capex in 2024. The semiconductor sector (SOX index) had already risen ~20% YTD entering earnings. Export controls on advanced AI chips to China were in effect but had limited near-term revenue impact as US hyperscaler demand overwhelmed any lost China volume."
+  },
+  "ground_truth": {
+    "price_1w_after": 726.13,
+    "price_change_pct": 15.76,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Revenue concentration: ~83% from Data Center segment creates single-point exposure",
+      "Export controls on H100/A100 to China could expand, removing a significant market",
+      "Customer concentration: top 5 hyperscalers represent majority of Data Center revenue",
+      "Supply chain constraints on CoWoS packaging limited upside; not all demand was fillable",
+      "Valuation stretched at ~35x forward sales before earnings; priced for perfection",
+      "AMD MI300X competitive ramp could erode NVIDIA's monopoly pricing power over 12\u201318 months",
+      "Transition risk from H100 to Blackwell could create a revenue air pocket mid-2024",
+      "NVIDIA's gross margins are historically cyclical; current 76%+ levels may not be sustainable",
+      "Earnings quality concern: much of EPS upside from operating leverage, not revenue diversification"
+    ],
+    "missed_signals": [
+      "Sovereign AI demand (governments building national AI infrastructure) was a new growth vector not yet in consensus models",
+      "TSMC CoWoS capacity was a harder constraint than disclosed; actual shipments were below order backlog",
+      "Blackwell architecture was quietly already sampling at Microsoft Azure\u2014earlier than public statements implied"
+    ]
+  }
+}

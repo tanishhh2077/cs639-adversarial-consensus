@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_017",
+  "company": "Target Corporation",
+  "ticker": "TGT",
+  "event_date": "2024-11-20",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Target reported Q3 FY2024 earnings on November 20, 2024, delivering a severe earnings miss and slashing Q4 guidance\u2014sending shares down approximately 22% in one of the biggest single-day drops in Target's history. Revenue of $25.67 billion grew just 1.1% YoY, slightly above the $25.87 billion estimate (barely missing). EPS of $1.85 dramatically missed the $2.30 estimate. Comparable store sales grew just 0.3% (vs. 1.5% estimate), with digital comps growing 10.8% offset by continued store traffic weakness.\n\nThe catastrophic miss came from operating margins: Target's operating margin of 4.6% was well below the 6.0% estimate due to increased promotional activity, inventory shrinkage (theft losses), and higher supply chain costs. Management guided Q4 EPS to just $1.85\u2013$2.45, sharply below the $2.65 consensus\u2014a range so wide that analysts interpreted it as reflecting extraordinary internal uncertainty. CEO Brian Cornell cited increased competitive pressure from Walmart's value positioning, ongoing consumer trade-down behavior, and elevated shrink losses that were proving harder to mitigate than expected.",
+    "key_metrics": {
+      "revenue": 25673000000,
+      "revenue_yoy_growth": 0.011,
+      "eps_gaap": 1.85,
+      "comp_store_sales_growth": 0.003,
+      "digital_comp_growth": 0.108,
+      "operating_margin": 0.046,
+      "gross_margin": 0.278,
+      "q4_guidance_eps_low": 1.85,
+      "q4_guidance_eps_high": 2.45,
+      "shrink_losses_bn": 0.6,
+      "inventory_bn": 12.1,
+      "consensus_estimate_revenue": 25870000000,
+      "consensus_estimate_eps": 2.3,
+      "consensus_estimate_op_margin": 0.06
+    },
+    "price_history": [
+      152.3,
+      153.8,
+      155.4,
+      154.1,
+      156.7,
+      158.3,
+      157.0,
+      158.6,
+      160.2,
+      158.9,
+      160.5,
+      162.1,
+      160.8,
+      162.4,
+      164.0,
+      162.7,
+      164.3,
+      165.9,
+      164.6,
+      166.2,
+      167.8,
+      166.5,
+      168.1,
+      169.7,
+      168.4,
+      170.0,
+      171.6,
+      170.3,
+      172.0,
+      155.56
+    ],
+    "sector": "Consumer Staples / General Merchandise Retail",
+    "macro_context": "Walmart had reported strong Q3 results one day earlier, creating a stark contrast with Target. Consumer bifurcation was intensifying: value-oriented shopping (Walmart, Aldi, Dollar stores) was gaining share from mid-market retailers. The holiday shopping season was starting earlier with deeper promotional activity. Inflation had moderated to ~2.5% but cumulative price increases since 2020 (~20%) had fundamentally altered consumer value perception. TikTok shopping and Amazon same-day delivery were accelerating competitive pressure."
+  },
+  "ground_truth": {
+    "price_1w_after": 127.31,
+    "price_change_pct": -18.16,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Operating margin structural compression from shrink losses has no clear near-term fix",
+      "Walmart's value perception advantage is widening \u2014 Target's 'cheap chic' positioning is eroding",
+      "Discretionary categories (apparel, home goods, electronics) are Target's strength and are declining",
+      "Digital investment is costly but not differentiating relative to Amazon Prime same-day delivery",
+      "Q4 guidance range of $0.60 implies management has almost no visibility \u2014 operational dysfunction signal",
+      "Inventory management: overstocking discretionary goods while consumers trade down to essentials",
+      "Food and beverage (grocery) growth is not offsetting declines in high-margin discretionary categories",
+      "Store format strategy unclear \u2014 large-format stores are cost-heavy in a low-traffic environment"
+    ],
+    "missed_signals": [
+      "Walmart's food delivery partnership with Instacart was pulling grocery traffic from Target faster than tracked",
+      "Holiday season inventory decisions had already been finalized \u2014 markdown risk was locked in before anyone could act"
+    ]
+  }
+}

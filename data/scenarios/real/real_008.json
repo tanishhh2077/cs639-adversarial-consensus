@@ -1,0 +1,81 @@
+{
+  "scenario_id": "real_008",
+  "company": "Salesforce, Inc.",
+  "ticker": "CRM",
+  "event_date": "2024-05-29",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "Salesforce reported Q1 FY2025 earnings on May 29, 2024, missing revenue estimates and providing disappointing guidance that triggered the worst single-day stock decline in the company's history\u2014down approximately 20%. Revenue grew 11% YoY to $9.13 billion, below the $9.17 billion consensus in what was Salesforce's first revenue miss in nearly two decades. EPS of $2.44 beat the $2.38 consensus, but the market focused entirely on the top-line miss and the weak guide.\n\nManagement guided Q2 revenue to $9.20\u2013$9.25 billion, below the $9.34 billion consensus. Full-year FY2025 revenue guidance was also lowered to $37.7\u2013$38.0 billion from $37.7\u2013$38.0B prior (essentially the low end became the ceiling). Current Remaining Performance Obligation (cRPO)\u2014a leading indicator of near-term revenue\u2014grew just 10%, its slowest pace in years. CEO Marc Benioff acknowledged that enterprise customers were scrutinizing software spending more carefully and consolidating seat counts, reducing the company's natural expansion revenue. The Agentforce AI product was mentioned as a future catalyst but not yet generating material revenue. Co-CEO Bret Taylor had departed months earlier.",
+    "key_metrics": {
+      "revenue": 9133000000,
+      "revenue_yoy_growth": 0.11,
+      "eps_non_gaap": 2.44,
+      "operating_income_non_gaap": 3043000000,
+      "operating_margin_non_gaap": 0.333,
+      "crpo_growth": 0.1,
+      "q2_guidance_revenue_low": 9200000000,
+      "q2_guidance_revenue_high": 9250000000,
+      "fy25_guidance_revenue_low": 37700000000,
+      "fy25_guidance_revenue_high": 38000000000,
+      "consensus_estimate_revenue": 9170000000,
+      "consensus_estimate_eps": 2.38,
+      "subscription_revenue": 8587000000,
+      "attrition_rate": 0.08
+    },
+    "price_history": [
+      279.54,
+      283.2,
+      285.6,
+      281.9,
+      286.4,
+      290.1,
+      287.8,
+      292.3,
+      295.6,
+      292.1,
+      296.5,
+      299.8,
+      297.2,
+      293.6,
+      297.9,
+      301.4,
+      298.7,
+      295.1,
+      299.4,
+      303.2,
+      300.6,
+      296.9,
+      301.2,
+      305.0,
+      302.3,
+      298.6,
+      303.1,
+      307.2,
+      304.5,
+      272.35
+    ],
+    "sector": "Technology / Enterprise Software / SaaS",
+    "macro_context": "Enterprise software spending was under pressure in mid-2024 as CFOs demanded ROI justification for all SaaS subscriptions. The 'software recession' saw companies like Workday, ServiceNow, and HubSpot all experience slowing growth. AI spending was pulling IT budgets toward infrastructure/compute and away from application-layer SaaS. Interest rates remained high at 5.25\u20135.50%, increasing the hurdle rate for software investments. The broader CRM market faced intensifying competition from Microsoft (Dynamics + Copilot) and AI-native startups building vertical CRM tools."
+  },
+  "ground_truth": {
+    "price_1w_after": 217.89,
+    "price_change_pct": -19.98,
+    "actual_direction": "down",
+    "key_risk_factors": [
+      "Revenue growth decelerating to 11% at a $37B+ run rate is structurally concerning for valuation",
+      "cRPO growth of 10% implies near-term revenue deceleration will persist into FY2026",
+      "Co-CEO Bret Taylor's departure removed a key technical visionary at a critical AI transition period",
+      "Agentforce AI product is unproven with zero current revenue contribution \u2014 future catalyst, not current one",
+      "Microsoft Dynamics 365 + Copilot integration directly threatens Salesforce's enterprise CRM monopoly",
+      "Seat count rationalization by enterprise customers compresses the 'land and expand' growth engine",
+      "Salesforce's ~$10B data cloud acquisition strategy hasn't generated the expected cross-sell lift",
+      "Operating margin expansion story is real but being ignored while revenue growth decelerates",
+      "Activist investor pressure (Elliott Management) to cut costs may slow strategic investment"
+    ],
+    "missed_signals": [
+      "Agentforce launch in Q4 FY2025 would generate $900M+ in pipeline \u2014 the trough was temporary",
+      "The cRPO inflection point had already occurred but was being disclosed with a reporting lag"
+    ]
+  }
+}

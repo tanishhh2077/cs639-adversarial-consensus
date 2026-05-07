@@ -1,0 +1,80 @@
+{
+  "scenario_id": "real_023",
+  "company": "UnitedHealth Group Incorporated",
+  "ticker": "UNH",
+  "event_date": "2024-04-16",
+  "event_type": "earnings",
+  "modification_type": "none",
+  "input_data": {
+    "earnings_summary": "UnitedHealth Group reported Q1 2024 earnings on April 16, 2024, beating EPS and revenue estimates but facing intense scrutiny over the February 21, 2024 cyberattack on Change Healthcare\u2014the largest healthcare payment processing platform in the US, which UnitedHealth had acquired in 2022. Revenue grew 8.6% YoY to $99.8 billion, above the $99.3 billion estimate. Adjusted EPS of $6.91 beat the $6.57 estimate. The health insurance (UnitedHealthcare) and pharmacy benefits (Optum Rx) segments both performed in line with expectations.\n\nHowever, the Change Healthcare attack dominated the call: management estimated the direct adverse impact at $0.45\u2013$0.55 per share in 2024, with total costs (including business disruption loans to affected providers) potentially reaching $1.6 billion. The attack disrupted claims processing for thousands of hospitals and physician practices. CEO Andrew Witty acknowledged that a cyberattack protection failure in a single non-multi-factor-authenticated server was the entry point. Management lowered FY2024 adjusted EPS guidance to $27.50\u2013$28.00 from $27.50\u2013$28.25, absorbing the attack costs.",
+    "key_metrics": {
+      "revenue": 99800000000,
+      "revenue_yoy_growth": 0.086,
+      "eps_adjusted": 6.91,
+      "medical_care_ratio": 0.847,
+      "unitedhealthcare_revenue": 74450000000,
+      "optum_health_revenue": 26080000000,
+      "optum_rx_revenue": 32380000000,
+      "optum_insight_revenue": 5060000000,
+      "fy2024_guidance_eps_low": 27.5,
+      "fy2024_guidance_eps_high": 28.0,
+      "change_healthcare_attack_date": "2024-02-21",
+      "estimated_attack_impact_per_share": 0.5,
+      "estimated_total_costs_bn": 1.6,
+      "consensus_estimate_revenue": 99300000000,
+      "consensus_estimate_eps": 6.57
+    },
+    "price_history": [
+      500.8,
+      505.2,
+      510.6,
+      506.4,
+      512.8,
+      518.3,
+      514.1,
+      519.6,
+      525.1,
+      520.9,
+      526.4,
+      532.0,
+      527.8,
+      533.3,
+      538.9,
+      534.7,
+      540.2,
+      545.8,
+      541.6,
+      547.1,
+      552.7,
+      548.5,
+      554.0,
+      559.7,
+      555.4,
+      561.0,
+      566.7,
+      562.4,
+      568.1,
+      477.64
+    ],
+    "sector": "Healthcare / Health Insurance / Managed Care",
+    "macro_context": "The Change Healthcare attack (February 2024) had caused the largest healthcare system disruption in US history, affecting approximately 1 in 3 patient records. Hospitals and pharmacies were processing claims manually for weeks. ALPHV/BlackCat ransomware group had demanded and allegedly received a $22M ransom payment, though UnitedHealth did not confirm. Congressional hearings were scheduled. The Biden administration proposed new healthcare cybersecurity minimum standards. Medical cost inflation (from pent-up demand post-COVID) was running above actuarial assumptions across the managed care sector."
+  },
+  "ground_truth": {
+    "price_1w_after": 487.73,
+    "price_change_pct": 2.12,
+    "actual_direction": "up",
+    "key_risk_factors": [
+      "Change Healthcare attack may have exposed protected health information (PHI) for 100M+ Americans \u2014 class action liability",
+      "Congressional scrutiny likely to result in new regulatory requirements and potential forced divestiture of Change Healthcare",
+      "Medical cost ratio (84.7%) is slightly elevated \u2014 early signal of medical cost inflation exceeding premium increases",
+      "Provider loans from Change Healthcare disruption ($6.5B+) create balance sheet risk if providers cannot repay",
+      "DOJ antitrust investigation into Optum's acquisition of physician practices could result in forced divestitures",
+      "Premium rate increases for 2025 may not fully cover medical cost inflation if trend is accelerating",
+      "Reputational damage: being associated with largest healthcare breach in history affects enterprise sales"
+    ],
+    "missed_signals": [
+      "Total Change Healthcare costs would reach $3.3B by year end \u2014 far exceeding the $1.6B initial estimate",
+      "CEO Andrew Witty would testify before Congress and face significant hostile questioning that damaged stock further"
+    ]
+  }
+}

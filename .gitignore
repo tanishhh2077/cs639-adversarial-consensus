@@ -46,10 +46,14 @@ Thumbs.db
 *.log
 logs/
 
-# Run outputs (benchmark results, figures, cached LLM responses)
+# Run outputs (benchmark results, cached LLM responses)
 results/
 outputs/
-figures/
 *.cache
+
+# Local-only test fixtures (not part of the final deliverable)
 test_scenario.json
 test_agents.py
+
+# Local docx build helper
+build_docx.js
