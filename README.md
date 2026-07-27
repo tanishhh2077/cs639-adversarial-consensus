@@ -1,5 +1,4 @@
 # Adversarial Consensus
-### CS 639: Introduction to Foundation Models | Spring 2026 | UW-Madison
 
 A multi-agent LLM framework where specialized agents with conflicting analytical mandates (Bull, Base, Bear, Quant, Macro) debate financial scenarios. An Arbiter synthesizes their arguments into a final analysis with a disagreement map.
 
